@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.gridPrincipal {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 30em;
+    grid-template-areas: "usuario datos metodoPago";
+
+
+}
+
+.usuario {
+    grid-area: usuario;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-area: datos;
+    grid-template-areas: "email email"
+                        "contraseñaUsuario ";
+}
+
+.metodoPago {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-area: metodoPago;
+    justify-content: center;
+
+}
+
+.infoUsuario {
+
+    padding: 2em;
+}
+
+
+.xxx {
+    width: 2em;
+}
+
+
+
+.metodosDePago {
+    padding: 2em;
+    padding-left: 2em;
+}
+
+.cuponDePago {
+    display: grid;
+    grid-template-rows: 50% 50%;
+
+}
+
+.inputNumeroyCodigo {
+    padding: 1em;
+}
+
+.radioCuponPago {
+    padding-top: 3em;
+}
+
+.inputNuevayRepetirContraseña {
+    padding: 1em;
+}
+
+.inputNuevaContraseña{
+    position: absolute;
+    top: 41%;
+}
+
+.inputRepetirContraseña{
+    position: absolute;
+    top: 58%;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: #d31818cc;
+    border: solid 1px #d31818cc;
+    color: #080808;
+    font-size: 15px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+

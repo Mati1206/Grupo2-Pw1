@@ -1,0 +1,68 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 20em 20em;
+    padding-top: 1em;
+    grid-template-areas: "foto descr"
+        "similares similares";
+}
+
+
+.gridSimilares {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 10px;
+}
+
+
+.foto {
+    grid-area: foto;
+}
+
+.descripcion {
+    grid-area: descr;
+    padding-left: 2em;
+}
+
+.similares {
+    grid-area: similares;
+    padding: 10px;
+}
+
+.peli {
+    padding: 5px;
+}
+
+.imagen{
+height: 80%;
+}
+
+.boton{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.comenzar{
+cursor: pointer;
+padding: 1em 5em;
+border-radius: 8px;
+border:none;
+background-color: #d31818cc;
+border: solid 1px #d31818cc;
+color: #080808;
+font-size: 15px;
+}
+
+.fotoPelicula{
+    height: auto;
+    width: auto;
+}
+
+.fotoSerie{
+    width: 100%;
+    height: 100%;
+}
