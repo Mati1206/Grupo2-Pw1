@@ -1,0 +1,118 @@
+ul
+li { 
+    list-style: none;
+}
+html, body { 
+
+    background-color: black;
+    color: aliceblue;
+    background-image: url("../images/fondo-recuperar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p, a{ 
+    color: aliceblue; 
+    text-decoration: none;
+}
+.inicio{ 
+    color: red;
+    display: block;
+  text-align: end;
+  
+}
+
+
+.contenedor { 
+    display: grid;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+  grid-template-columns: 33% 33% 34%; 
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  left: 35%;
+position: absolute;
+top: 25%;
+  
+}
+.campo1 { 
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  justify-content: flex-end;
+  position: relative;
+  right: 20%;
+}
+.campo2{
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 2/3;
+    height: 2%;
+    position: relative;
+    top: 40%;
+    
+    
+}
+.email {
+   
+   border: 2px solid white;
+   border-radius: 8px;
+}
+.campo3 { 
+    display: grid;
+    justify-content: flex-end;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    position: relative;
+  right: 20%;
+
+}
+.campo4{
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 3/4;
+    height: 2%;
+    position: relative;
+    top: 25%;
+    
+}
+.usuario { 
+    border: 2px solid white;
+   border-radius: 8px;
+}
+.campo5 { 
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+.boton1 { 
+    background-color: green;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+    left: 60%;
+}
+
+.boton2 { 
+    background-color:brown;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.campo6 { 
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 50%;
+    position: relative;
+    left: 20%;
+    
+}
+.campo7{ 
+    display: grid;
+    grid-column: 1/3;
+    justify-content: center;
+
+    
+}
