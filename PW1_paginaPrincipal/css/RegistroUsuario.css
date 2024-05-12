@@ -17,8 +17,17 @@ p, a {
     text-decoration: none;
 }
 
+.black_buster{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    
+}
+
 .header_pagina{
     margin: 1rem;
+      
 }
 
 .contenedor_general{
@@ -34,7 +43,7 @@ p, a {
 .datos-personales,
 .metodos-pago{
     position:relative;
-    width: 40%;
+    width: 45%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -58,6 +67,11 @@ p, a {
     padding-right: 100px; 
 }
 
+.metodos-pago input,
+.datos-personales input{
+border-radius: 5px;
+}
+
 .metodos-pago input[type="text"]{
 width: 15em;
 }
@@ -70,14 +84,17 @@ width: 15em;
     width: 3em;
 }
 
+
 .section_botones {
     display: flex;
-    justify-content: center;
+    justify-content:flex-end;
     margin-top: 20px;
+    margin-inline-end: 20em;
 }
 
 .section_botones .campo button {
-    margin: 10px;
+    margin: 50px;
+
 }
 
 .boton_confirmar{
@@ -86,6 +103,7 @@ width: 15em;
      border: solid 1px #d31818cc;
      color: #fff;
      font-size: 15px;
+     border-radius: 10px;
 }
 .boton_cancelar{
     padding: 10px 20px;
@@ -93,4 +111,6 @@ width: 15em;
      border: solid 1px #ffffff;
      color: #080808;
      font-size: 15px;
+     border-radius: 10px;
+
 }
