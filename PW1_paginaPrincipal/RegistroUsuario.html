@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registroUsuario.css">
+    <title>Registro nuevo usuario</title>
+</head>
+
+<body>
+    <main>
+    <header class="black_buster">
+        <h1>Black Buster</h1>
+    </header>
+        <div class="header_pagina">
+            <h2>Registro de Nuevo Usuario</h2>
+        </div>
+       
+        <form class="form-registro" id="registro" action="./index.html" method="post">
+            <section class="contenedor_general"> 
+                
+                <article class="datos-personales">
+                    <h3>Datos personales</h3> 
+                <br>             
+                    <label for="nombre">Nombre:
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required></label>
+                    <label for="apellido">Apellido:
+                    <input id="apellido" type="text" name="apellido" placeholder="Apellido" required></label>
+                    <label for="email">Correo electrónico:
+                    <input id="email" type="email" name="email" placeholder="Correo Electrónico" required></label>
+                    <label for="usuario">Nombre de usuario:
+                    <input id="usuario" type="text" name="usuario" placeholder="Nombre de Usuario" required></label>
+                    <label for="contraseña">Contraseña:
+                    <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required></label>
+                    <label for="confirmar_contraseña">Repetir Contraseña:
+                    <input id="confirmar_contraseña" type="password"
+                    name="confirmar_contraseña" placeholder="Repetir Contraseña" required></label>
+                   
+                </article>
+            <br>
+
+            <article class="metodos-pago">
+                <h3>Método de pago</h3>
+                <br>
+                <!-- Tarjeta de Crédito -->
+                <article class="article_tarjeta">
+                    <label class="titulo" for="pago_tarjeta">
+                    <input type="radio" id="pago_tarjeta" name="metodo_pago" value="tarjeta">
+                    Tarjeta de Crédito</label>
+                    <div class="detalles-tarjeta">
+                        <div class="campo">
+                            <label for="numero_tarjeta">Número de Tarjeta:
+                            <input id="numero_tarjeta" type="text" name="numero_tarjeta" 
+                            placeholder="Número de Tarjeta" ></label>
+                        </div>
+                        <div class="campo">
+                            <label for="nombre_titular">Nombre del Titular:
+                            <input id="nombre_titular" type="text" name="nombre_titular" 
+                            placeholder="Nombre del Titular"></label>
+                        </div>
+                        <div class="campo_corto">
+                            <label for="mes_vencimiento">Vencimiento:
+                            <input id="mes_vencimiento" type="text" name="mes_vencimiento" 
+                            placeholder="MM/AA"></label>
+                        </div>
+                        <div class="campo_mascorto">
+                            <label for="codigo_seguridad">Código de Seguridad:
+                            <input id="codigo_seguridad" type="text" name="codigo_seguridad" 
+                            placeholder="CVC"></label>
+                        </div>
+                    </div>
+                </article>
+                <br>
+                <!-- Cupón de Pago -->
+                <article class="article_cupon">
+                    <label class="titulo" for="cupon_pago">Cupón de Pago</label>
+                    <div class="detalles-cupon">
+                    <label for="pagofacil"><input type="radio" id="pagofacil" name="cupon_pago_tipo" value="pagofacil">
+                    PagoFácil</label>
+                    <label for="rapipago"><input type="radio" id="rapipago" name="cupon_pago_tipo" value="rapipago">
+                    Rapipago</label>
+                    </div>
+                </article>
+                <br>
+                <!-- Transferencia Bancaria -->
+                <article class="article_transferencia">
+                    <label class="titulo" for="pago_transferencia">
+                    <input type="radio" id="pago_transferencia" name="metodo_pago" value="transferencia">
+                    Transferencia Bancaria</label>
+                    <div class="detalles-transferencia">
+                        <p>CBU: 115000060200123456789 - Banco de la Plaza</p>
+                    </div>
+                </article>
+            </article>
+        </section>
+            <br>
+            <section class="section_botones">
+                <div class="campo">
+                    <button id="confirmar" class="boton_confirmar" type="submit">Confirmar</button>
+                    <button action="./index.html" id="cancelar" class="boton_cancelar" type="reset">Cancelar</button>
+                </div>
+                
+            </section>
+        
+        
+    </form>
+                <footer>
+                    <br>
+                </footer>
+
+</body>
+
+</html>

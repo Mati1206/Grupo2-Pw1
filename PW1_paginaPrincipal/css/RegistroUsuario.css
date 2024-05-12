@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111f3;
+    color: #ecf0f1a9;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+p, a {
+    color: #ecf0f1a9;
+    text-decoration: none;
+}
+
+.header_pagina{
+    margin: 1rem;
+}
+
+.contenedor_general{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.datos-personales,
+.metodos-pago{
+    position:relative;
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.datos-personales  {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:self-end;
+    justify-items:normal;
+    padding-right: 100px; 
+    
+}
+ 
+.metodos-pago{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:self-start;
+    justify-items:last baseline;
+    padding-right: 100px; 
+}
+
+.metodos-pago input[type="text"]{
+width: 15em;
+}
+
+.campo_corto input[type= "text"]{
+    width: 5em;
+}
+
+.campo_mascorto input[type= "text"]{
+    width: 3em;
+}
+
+.section_botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section_botones .campo button {
+    margin: 10px;
+}
+
+.boton_confirmar{
+    padding: 10px 20px;
+     background-color: #d31818cc;
+     border: solid 1px #d31818cc;
+     color: #fff;
+     font-size: 15px;
+}
+.boton_cancelar{
+    padding: 10px 20px;
+     background-color: #ffffff;
+     border: solid 1px #ffffff;
+     color: #080808;
+     font-size: 15px;
+}
