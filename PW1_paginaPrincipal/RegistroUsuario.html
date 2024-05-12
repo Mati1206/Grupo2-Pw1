@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/registroUsuario.css">
+    <link rel="stylesheet" href="registroUsuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <title>Registro nuevo usuario</title>
 </head>
 
 <body>
     <main>
     <header class="black_buster">
-        <h1>Black Buster</h1>
+        <a href="index.html"> <h1>Black Buster</h1></a>
     </header>
         <div class="header_pagina">
             <h2>Registro de Nuevo Usuario</h2>
@@ -40,7 +43,7 @@
                 </article>
             <br>
 
-            <article class="metodos-pago">
+            <section class="metodos-pago">
                 <h3>Método de pago</h3>
                 <br>
                 <!-- Tarjeta de Crédito -->
@@ -76,9 +79,9 @@
                 <article class="article_cupon">
                     <label class="titulo" for="cupon_pago">Cupón de Pago</label>
                     <div class="detalles-cupon">
-                    <label for="pagofacil"><input type="radio" id="pagofacil" name="cupon_pago_tipo" value="pagofacil">
+                    <label for="pagofacil"><input type="radio" id="pagofacil" name="metodo_pago" value="pagofacil">
                     PagoFácil</label>
-                    <label for="rapipago"><input type="radio" id="rapipago" name="cupon_pago_tipo" value="rapipago">
+                    <label for="rapipago"><input type="radio" id="rapipago" name="metodo_pago" value="rapipago">
                     Rapipago</label>
                     </div>
                 </article>
@@ -92,7 +95,7 @@
                         <p>CBU: 115000060200123456789 - Banco de la Plaza</p>
                     </div>
                 </article>
-            </article>
+            </section>
         </section>
             <br>
             <section class="section_botones">
