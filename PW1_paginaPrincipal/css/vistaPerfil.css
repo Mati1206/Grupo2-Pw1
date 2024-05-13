@@ -84,6 +84,7 @@
     border: solid 1px #d31818cc;
     color: #080808;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .botones{
@@ -94,3 +95,21 @@
 }
 
 
+.botonGuardarCambios{
+    padding-inline: 1em;
+}
+
+.iconoUsuario{
+    font-size: 10em
+}
+
+.divIconoUsuario{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.nombreUsuario{
+    margin-left: 1.5em;
+    padding: 2em;
+}

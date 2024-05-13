@@ -25,8 +25,11 @@
     <main>
         <section class="gridPrincipal">
             <article class="usuario">
-                <i class="fa-regular fa-circle-user iconoUsuario"></i>
-                <p>Nombre de Usuario</p>
+                <div class="divIconoUsuario">
+                    <i class="fa-regular fa-circle-user iconoUsuario"></i>
+                </div>
+                <p class="nombreUsuario">Nombre de Usuario</p>
+                
             </article>
 
             <article class="datos">
@@ -96,8 +99,12 @@
             </article>
         </section>
         <article class="botones">
-            <button class="btn btn--aceptar">Guardar cambios</button>
-            <button class="btn btn--cancelar">Cancelar subscripcion</button>
+            <div class="botonGuardarCambios">
+                <a href="vistaPerfil.html"><button class="btn btn--aceptar">Guardar cambios</button></a>
+            </div>
+            <div class="botonCancelarSubcripcion">
+                <a href="vistaPerfil.html"><button class="btn btn--cancelar">Cancelar subscripcion</button></a> 
+            </div>
         </article>
     </main>
 </body>
