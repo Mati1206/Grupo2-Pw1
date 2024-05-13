@@ -107,7 +107,22 @@ width: 15em;
      color: #fff;
      font-size: 15px;
      border-radius: 10px;
+     transition: background-color 0.3s, color 0.3s; 
+
+     
 }
+
+.boton_confirmar:hover{
+    background-color: grey;
+    color: #080808;
+    
+}
+
+.boton_cancelar:hover {
+    background-color: grey;
+    color: #ffffff; 
+}
+
 .boton_cancelar{
     padding: 10px 20px;
      background-color: #ffffff;
@@ -115,8 +130,8 @@ width: 15em;
      color: #080808;
      font-size: 15px;
      border-radius: 10px;
-
-}
+     transition: background-color 0.3s, color 0.3s; 
+    }
 
 @media screen and (( min-width: 600px)  and (max-width: 900px))  { 
 
