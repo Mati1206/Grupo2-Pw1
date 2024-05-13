@@ -115,12 +115,14 @@ width: 15em;
 .boton_confirmar:hover{
     background-color: grey;
     color: #080808;
+     cursor: pointer;
     
 }
 
 .boton_cancelar:hover {
     background-color: grey;
     color: #ffffff; 
+     cursor: pointer;
 }
 
 .boton_cancelar{
