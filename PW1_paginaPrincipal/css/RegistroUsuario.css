@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html { 
+    background-color: #080808;
+   
+}
 body {
-    background-color: #111111f3;
+   
     color: #ecf0f1a9;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -113,4 +116,56 @@ width: 15em;
      font-size: 15px;
      border-radius: 10px;
 
+}
+
+@media screen and (( min-width: 600px)  and (max-width: 900px))  { 
+
+  
+}
+@media screen and (width <600px){ 
+
+h1{ 
+    display: flex;
+    justify-content: center;
+}
+.section.metodos-pago{
+    width: 100%;
+    height: 100%;
+}
+.contenedor_general { 
+    display: block;
+    left: 30%;
+ 
+}
+.datos-personales {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-end;
+    justify-items: normal;
+    padding-right: 100px;
+    left: 30%;
+}
+
+.metodos-pago{ 
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-start;
+    justify-items: last baseline;
+    left: 30%;
+}
+.boton_confirmar {
+    display: grid;
+    position: relative;
+    left: 100%;
+}
+.boton_cancelar {
+    display: grid;
+    position: relative;
+    left: 100%;
+}
+.metodos-pago input[type= "text"]{
+    width: 87%;
+}
 }

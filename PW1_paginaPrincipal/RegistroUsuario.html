@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registroUsuario.css">
+    <link rel="stylesheet" href="css/RegistroUsuario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
             <h2>Registro de Nuevo Usuario</h2>
         </div>
        
-        <form class="form-registro" id="registro" action="./index.html" method="post">
+        <form class="form-registro" id="registro" action="login.html" method="get">
             <section class="contenedor_general"> 
                 
                 <article class="datos-personales">
@@ -44,7 +44,7 @@
             <br>
 
             <section class="metodos-pago">
-                <h3>Método de pago</h3>
+                <h3 >Método de pago</h3>
                 <br>
                 <!-- Tarjeta de Crédito -->
                 <article class="article_tarjeta">
@@ -54,7 +54,7 @@
                     <div class="detalles-tarjeta">
                         <div class="campo">
                             <label for="numero_tarjeta">Número de Tarjeta:
-                            <input id="numero_tarjeta" type="text" name="numero_tarjeta" 
+                            <input id="numero_tarjeta" type="number" name="numero_tarjeta" 
                             placeholder="Número de Tarjeta" ></label>
                         </div>
                         <div class="campo">
@@ -64,12 +64,12 @@
                         </div>
                         <div class="campo_corto">
                             <label for="mes_vencimiento">Vencimiento:
-                            <input id="mes_vencimiento" type="text" name="mes_vencimiento" 
+                            <input id="mes_vencimiento" type="number" name="mes_vencimiento" 
                             placeholder="MM/AA"></label>
                         </div>
                         <div class="campo_mascorto">
                             <label for="codigo_seguridad">Código de Seguridad:
-                            <input id="codigo_seguridad" type="text" name="codigo_seguridad" 
+                            <input id="codigo_seguridad" type="number" name="codigo_seguridad" 
                             placeholder="CVC"></label>
                         </div>
                     </div>
@@ -101,15 +101,14 @@
             <section class="section_botones">
                 <div class="campo">
                     <button id="confirmar" class="boton_confirmar" type="submit">Confirmar</button>
-                    <button action="./index.html" id="cancelar" class="boton_cancelar" type="reset">Cancelar</button>
+                    <button  id="cancelar" class="boton_cancelar" type="reset">Cancelar</button>
                 </div>
                 
             </section>
         
-        
     </form>
                 <footer>
-                    <br>
+               
                 </footer>
 
 </body>
