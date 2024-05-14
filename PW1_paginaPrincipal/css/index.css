@@ -146,5 +146,56 @@ a{
     color: #d31818cc;
 }
 
+@media screen and ( min-width: 600px) and (max-width: 900px){
+     .menu{
+        width: 100%;
+        position: static;
+      }
+
+      .home,.peliculas,.series,.perfil{
+        padding: 10px 48px;
+      }
+
+      .navegadorYCategorias{
+        width: 100%;
+        flex-direction: column;
+      }
+
+       
+      .fuenteC{
+        display: none;
+      }
+
+      .barraNav{
+        position: static;
+        width: 35%;
+        margin-left: 20px;
+      }
+
+      .category{
+        position: static;
+        width: 40%;
+        margin-left: 90px;
+      }
+
+      .category,.barraNav,.botonBuscar{
+        position: static;
+        padding: 20px;
+      }
+
+      .peliculasYSeries{
+        position: static;
+        overflow: scroll;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+      
+      .lineaA{
+        width: 100%;
+    }
+}
+
 
 
