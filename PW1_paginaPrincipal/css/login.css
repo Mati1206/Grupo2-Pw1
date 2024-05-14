@@ -125,9 +125,12 @@ p, a{
     grid-column: 1/3;
     grid-row: 6/6;
     justify-content: center;
-
-    
 }
+    .campo6:hover,
+.campo7:hover{
+    text-decoration: underline;
+}
+
 .campo8{ 
     display: grid;
     grid-column: 1/3;
