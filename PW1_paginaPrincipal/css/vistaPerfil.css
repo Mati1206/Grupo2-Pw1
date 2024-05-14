@@ -2,13 +2,19 @@
     padding: 0;
     margin: 0;
 }
-
+.black_buster{
+    color: #fff;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    
+}
 .gridPrincipal {
     display: grid;
     grid-template-columns: 20% 40% 40%;
     grid-template-rows: 30em;
     grid-template-areas: "usuario datos metodoPago";
-
 
 }
 
@@ -70,28 +76,51 @@
 
 .inputNuevaContraseña{
     position: absolute;
-    top: 41%;
+    top: 35%;
 }
 
 .inputRepetirContraseña{
     position: absolute;
-    top: 58%;
+    top: 50%;
 }
 
-.btn{
+.botonGuardarCambios{
     padding: 10px 20px;
-    background-color: #d31818cc;
-    border: solid 1px #d31818cc;
-    color: #080808;
-    font-size: 15px;
-    cursor: pointer;
+     background-color: #d31818cc;
+     border: solid 1px #d31818cc;
+     color: #fff;
+     font-size: 15px;
+     border-radius: 10px;
+     transition: background-color 0.3s, color 0.3s; 
 }
+
+.botonGuardarCambios:hover{
+    background-color: grey;
+    color: #080808;
+     cursor: pointer;
+}
+
+.botonCancelarSubcripcion:hover {
+    background-color: grey;
+    color: #ffffff; 
+     cursor: pointer;
+}
+
+.botonCancelarSubcripcion{
+    padding: 10px 20px;
+     background-color: #ffffff;
+     border: solid 1px #ffffff;
+     color: #080808;
+     font-size: 15px;
+     border-radius: 10px;
+     transition: background-color 0.3s, color 0.3s; 
+    }
 
 .botones{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-  
+    gap: 5em;
 }
 
 
