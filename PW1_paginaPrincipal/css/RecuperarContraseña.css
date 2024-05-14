@@ -1,6 +1,10 @@
-ul
-li { 
-    list-style: none;
+.black_buster{
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: white;
+    
 }
 html, body { 
 
@@ -20,7 +24,6 @@ p, a{
   text-align: end;
   
 }
-
 
 .contenedor { 
     display: grid;
@@ -49,11 +52,8 @@ top: 25%;
     height: 2%;
     position: relative;
     top: 40%;
-    
-    
 }
 .email {
-   
    border: 2px solid white;
    border-radius: 8px;
 }
@@ -83,36 +83,54 @@ top: 25%;
     display: grid;
     grid-column: 1/2;
     grid-row: 4/5;
-
-}
-.boton1 { 
-    background-color: green;
-    border-radius: 10px;
     width: 50%;
-    cursor: pointer;
-    height: 100%;
     position: relative;
-    left: 60%;
+    left: 15em;   
+    justify-content: center;
 }
-
-.boton2 { 
-    background-color:brown;
-    cursor: pointer;
-    border-radius: 10px;
-}
-.campo6 { 
+campo6 { 
     display: grid;
     grid-column: 2/3;
     grid-row: 4/5;
+    position:relative;
+    justify-content: center;
     width: 50%;
-    position: relative;
-    left: 20%;
-    
+    left: 10em;
 }
 .campo7{ 
     display: grid;
     grid-column: 1/3;
     justify-content: center;
+}
+.boton1 { 
+    padding: 10px 20px;
+    background-color: #d31818cc;
+    border: solid 1px #d31818cc;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; 
 
-    
+}
+
+.boton1:hover{
+   background-color: grey;
+   color: #080808;
+   cursor: pointer;
+}
+
+.boton2 { 
+    padding: 12px 30px;
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    color: #080808;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton2:hover{
+    background-color: grey;
+    color: #080808; 
+    cursor: pointer;
 }
