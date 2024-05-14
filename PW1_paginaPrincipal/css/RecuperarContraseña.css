@@ -86,14 +86,14 @@ top: 25%;
 }
 .campo5 { 
     display: grid;
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 4/5;
     width: 50%;
     position: relative;
     left: 15em;   
     justify-content: center;
 }
-campo6 { 
+.campo6 { 
     display: grid;
     grid-column: 2/3;
     grid-row: 4/5;
