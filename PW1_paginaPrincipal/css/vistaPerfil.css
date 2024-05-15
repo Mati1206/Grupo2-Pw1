@@ -142,3 +142,41 @@
     margin-left: 1.5em;
     padding: 2em;
 }
+
+@media screen and (max-width: 640px){
+    
+    .gridPrincipal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputNuevaContraseña,
+    .inputRepetirContraseña {
+        display: flex;
+        flex-direction: column;
+        position:relative
+    }
+
+    .metodoPago{
+        display: flex;
+       flex-direction: column;
+        justify-content:space-between;
+        align-items: stretch;
+        position: relative    
+
+    }
+
+    .metodosDePago {
+        padding: 2em;
+        padding-left: 2em;
+        position: relative    
+
+    }
+    
+    .cuponDePago {
+        display: flex;
+flex-direction: column;
+position: relative    
+    }
+    
+}
