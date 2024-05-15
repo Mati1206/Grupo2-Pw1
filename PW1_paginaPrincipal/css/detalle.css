@@ -85,3 +85,19 @@ transition: background-color 0.3s, color 0.3s;
     height: 100%;
 }
 
+@media screen and (max-width: 640px){
+
+    .grid {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    width: 80%;
+}
+
+
+.gridSimilares {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 10px;
+}
+}
