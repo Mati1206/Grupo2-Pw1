@@ -15,6 +15,10 @@ body {
     font-style: normal;
 
 }
+#error{
+color: red;
+}
+
 p, a {
     color: #ecf0f1a9;
     text-decoration: none;

@@ -27,7 +27,7 @@
                     <h3>Datos personales</h3> 
                 <br>             
                     <label for="nombre">Nombre:
-                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required></label>
+                    <input id="nombre" type="text" name="nombre"  placeholder="Nombre" required></label>
                     <label for="apellido">Apellido:
                     <input id="apellido" type="text" name="apellido" placeholder="Apellido" required></label>
                     <label for="email">Correo electrónico:
@@ -54,23 +54,25 @@
                     <div class="detalles-tarjeta">
                         <div class="campo">
                             <label for="numero_tarjeta">Número de Tarjeta:
-                            <input id="numero_tarjeta" type="number" name="numero_tarjeta" 
+                            <input id="numero_tarjeta" minlength="16" maxlength="19" type="text" name="numero_tarjeta" 
                             placeholder="Número de Tarjeta" ></label>
+                            <p id="error"></p>
                         </div>
                         <div class="campo">
                             <label for="nombre_titular">Nombre del Titular:
-                            <input id="nombre_titular" type="text" name="nombre_titular" 
+                            <input id="nombre_titular"  type="text" name="nombre_titular" 
                             placeholder="Nombre del Titular"></label>
                         </div>
                         <div class="campo_corto">
                             <label for="mes_vencimiento">Vencimiento:
-                            <input id="mes_vencimiento" type="number" name="mes_vencimiento" 
+                            <input id="mes_vencimiento" type="number"  name="mes_vencimiento" 
                             placeholder="MM/AA"></label>
                         </div>
                         <div class="campo_mascorto">
                             <label for="codigo_seguridad">Código de Seguridad:
-                            <input id="codigo_seguridad" type="number" name="codigo_seguridad" 
+                            <input id="codigo_seguridad" maxlength="3" type="text" name="codigo_seguridad" 
                             placeholder="CVC"></label>
+                            <p id="error"></p>
                         </div>
                     </div>
                 </article>
@@ -110,7 +112,7 @@
                 <footer>
                
                 </footer>
-
+<script src="./js/validar.js"></script>
 </body>
 
 </html>
