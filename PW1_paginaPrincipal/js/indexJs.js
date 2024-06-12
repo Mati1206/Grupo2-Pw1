@@ -172,7 +172,10 @@ const PELICULAS_Y_SERIES =
 
 function agregarSeriesYPeliculas(){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
-    const nodo_linea = document.querySelector('.linea')
+    //la clase lineaA, se tiene que generar acá
+    //hay que crear una condición que prepare la clase y así hacer cada fila
+    //y no quede en una linea sola
+    //no se como modificar el tamaño
 
     for(let i = 0; i < PELICULAS_Y_SERIES.length; i++){
         let nodo_img = document.createElement('img')
@@ -190,5 +193,4 @@ function agregarSeriesYPeliculas(){
     }
     nodo_pelicualasYseries.appendChild(nodo_linea)
 }
-
 agregarSeriesYPeliculas()
