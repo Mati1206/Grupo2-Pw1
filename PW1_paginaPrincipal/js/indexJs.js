@@ -167,9 +167,28 @@ const PELICULAS_Y_SERIES =
         temporadas: 4,
         duración: "22 min",
         poster: "./images/FineasYFerb.jfif"
-    },
+    }
 ]
 
 function agregarSeriesYPeliculas(){
-    
+    const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
+    const nodo_linea = document.querySelector('.linea')
+
+    for(let i = 0; i < PELICULAS_Y_SERIES.length; i++){
+        let nodo_img = document.createElement('img')
+        let nodo_a = document.createElement('a')
+        let nodo_div = document.createElement('div')
+       
+        nodo_img.src = PELICULAS_Y_SERIES[i].poster
+        nodo_img.alt = PELICULAS_Y_SERIES[i].título
+        nodo_a.href = "./detallePelicula.html"
+
+        nodo_a.appendChild(nodo_img)
+        nodo_div.appendChild(nodo_a)
+        nodo_linea.appendChild(nodo_div)
+        
+    }
+    nodo_pelicualasYseries.appendChild(nodo_linea)
 }
+
+agregarSeriesYPeliculas()
