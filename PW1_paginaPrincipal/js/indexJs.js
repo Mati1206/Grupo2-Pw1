@@ -172,25 +172,33 @@ const PELICULAS_Y_SERIES =
 
 function agregarSeriesYPeliculas(){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
+    let nodo_linea
     //la clase lineaA, se tiene que generar acá
     //hay que crear una condición que prepare la clase y así hacer cada fila
     //y no quede en una linea sola
     //no se como modificar el tamaño
 
     for(let i = 0; i < PELICULAS_Y_SERIES.length; i++){
-        let nodo_img = document.createElement('img')
+        if(i % 5 === 0){
+          nodo_linea = document.createElement('div')
+          nodo_linea.classList.add('linea')
+          nodo_pelicualasYseries.appendChild(nodo_linea)
+        }
+
+        let nodo_article = document.createElement('article')
+
+        let nodo_imagen = document.createElement('img')
+        nodo_imagen.src = PELICULAS_Y_SERIES[i].poster
+        nodo_imagen.alt = PELICULAS_Y_SERIES[i].título
+        nodo_imagen.height = 330;
+
         let nodo_a = document.createElement('a')
-        let nodo_div = document.createElement('div')
-       
-        nodo_img.src = PELICULAS_Y_SERIES[i].poster
-        nodo_img.alt = PELICULAS_Y_SERIES[i].título
         nodo_a.href = "./detallePelicula.html"
 
-        nodo_a.appendChild(nodo_img)
-        nodo_div.appendChild(nodo_a)
-        nodo_linea.appendChild(nodo_div)
-        
+        nodo_a.appendChild(nodo_imagen)
+        nodo_article.appendChild(nodo_a)
+        nodo_linea.appendChild(nodo_article)
+
     }
-    nodo_pelicualasYseries.appendChild(nodo_linea)
 }
 agregarSeriesYPeliculas()
