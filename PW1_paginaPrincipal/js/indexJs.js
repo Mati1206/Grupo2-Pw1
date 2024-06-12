@@ -193,10 +193,6 @@ const PELICULAS_Y_SERIES =
 function agregarSeriesYPeliculas(){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
     let nodo_linea
-    //la clase lineaA, se tiene que generar acá
-    //hay que crear una condición que prepare la clase y así hacer cada fila
-    //y no quede en una linea sola
-    //no se como modificar el tamaño
 
     for(let i = 0; i < PELICULAS_Y_SERIES.length; i++){
         if(i % 5 === 0){
@@ -222,3 +218,13 @@ function agregarSeriesYPeliculas(){
     }
 }
 agregarSeriesYPeliculas()
+
+const CATALOGO_PELICULAS = []
+
+function mostrarPeliculas(){
+    const verPeliculas = document.querySelector("menu peliculas")
+
+    verPeliculas.addEventListener('click', (event) => {
+        
+    })
+}
