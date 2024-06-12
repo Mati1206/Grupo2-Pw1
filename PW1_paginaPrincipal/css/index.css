@@ -34,26 +34,13 @@ a{
     width: calc(400%/4);
     background-color: #080808;
 }
-.home{
-    padding: 13px 130px;
+.home,.peliculas,.series,.perfil,.cerrarSesion{
+    padding: 13px 95px;
     font-size: 20px;
     color:#ecf0f1a9;
 }
-.peliculas{
-    padding: 13px 130px;
-    font-size: 20px;
-    color:#ecf0f1a9;
-}
-.series{
-    padding: 13px 130px;
-    font-size: 20px;
-    color:#ecf0f1a9;
-}
-.perfil{
-    padding: 13px 130px;
-    font-size: 20px;
-    color:#ecf0f1a9;
-}
+
+
 .navegadorYCategorias{
     display: flex;
     flex-direction: row;
@@ -138,16 +125,7 @@ a{
     cursor: pointer;
 }
 
-
-.fa-house{
-    color: #d31818cc;
-}
-
-.fa-film{
-    color: #d31818cc;
-}
-
-.fa-user{
+.fa-user,.fa-door-open, .fa-film, .fa-house{
     color: #d31818cc;
 }
 
