@@ -2,8 +2,7 @@
 function actualizarCatalogo(catalogo){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
     let nodo_linea
-    nodo_pelicualasYseries.innerHTML = '';
-
+    
     for(let i = 0; i < catalogo.length; i++){
         if(i % 5 === 0){
           nodo_linea = document.createElement('div')

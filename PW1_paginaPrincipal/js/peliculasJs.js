@@ -1,21 +1,14 @@
 let CATALOGO_PELICULAS = []
 
-function filtrarPeliculas(){
-    let catalogo = []
-    for(let i = 0; i < PELICULAS_Y_SERIES.length; i++){
-        if(PELICULAS_Y_SERIES[i].categoria === 1){
-            catalogo.push(PELICULAS_Y_SERIES[i])
-        }
-    }
-    return catalogo
-}
-
-CATALOGO_PELICULAS = filtrarPeliculas()
-
-function actualizarCatalogo(catalogo){
+function filtrarPeliculas(categoria){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
     let nodo_linea
     nodo_pelicualasYseries.innerHTML = '';
+    CATALOGO_PELICULAS = PELICULAS_Y_SERIES
+
+    if(categoria != null){
+      CATALOGO_PELICULAS = PELICULAS_Y_SERIES.filter(peliculas => peliculas.categoria === categoria)
+    }
 
     for(let i = 0; i < catalogo.length; i++){
         if(i % 5 === 0){
@@ -39,12 +32,9 @@ function actualizarCatalogo(catalogo){
         nodo_linea.appendChild(nodo_article)
 
     }
+    const nodo_peliculas = document.getElementById('peliculas').addEventListener('click',
+        () => filtrarPeliculas(2)
+     )
 }
 
-function mostrarPeliculas() {
-    const nodo_catalogoCompleto = document.querySelector('#peliculas');
-    nodo_catalogoCompleto.addEventListener('click', (event) => {
-        event.preventDefault();
-        actualizarCatalogo(CATALOGO_PELICULAS);
-    });
-}
+filtrarPeliculas()
