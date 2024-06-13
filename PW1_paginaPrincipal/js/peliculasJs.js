@@ -1,3 +1,16 @@
+let CATALOGO_PELICULAS = []
+
+function filtrarPeliculas(){
+    let catalogo = []
+    for(let i = 0; i < PELICULAS_Y_SERIES.length; i++){
+        if(PELICULAS_Y_SERIES[i].categoria === 1){
+            catalogo.push(PELICULAS_Y_SERIES[i])
+        }
+    }
+    return catalogo
+}
+
+CATALOGO_PELICULAS = filtrarPeliculas()
 
 function actualizarCatalogo(catalogo){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
@@ -28,14 +41,10 @@ function actualizarCatalogo(catalogo){
     }
 }
 
-actualizarCatalogo(PELICULAS_Y_SERIES)
-
-function mostrarPeliculasYSeries(){
-    const nodo_catalogoCompleto = document.querySelector('.home')
-    nodo_catalogoCompleto.addEventListener('click', (event) =>{
-       event.preventDefault()
-       actualizarCatalogo(PELICULAS_Y_SERIES)
-    })
+function mostrarPeliculas() {
+    const nodo_catalogoCompleto = document.querySelector('#peliculas');
+    nodo_catalogoCompleto.addEventListener('click', (event) => {
+        event.preventDefault();
+        actualizarCatalogo(CATALOGO_PELICULAS);
+    });
 }
-
-mostrarPeliculasYSeries()
