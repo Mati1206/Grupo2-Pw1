@@ -190,10 +190,6 @@ const PELICULAS_Y_SERIES =
     }
 ]
 
-
-const CATALOGO_PELICULAS = []
-const CATALOGO_SERIES = []
-
 function actualizarCatalogo(catalogo){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
     let nodo_linea
@@ -233,5 +229,8 @@ function mostrarPeliculasYSeries(){
     })
 }
 
-mostrarPeliculasYSeries()
 
+
+function mostrarPeliculas(){
+    
+}
