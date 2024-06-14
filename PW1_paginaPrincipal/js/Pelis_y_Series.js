@@ -189,3 +189,52 @@ const PELICULAS_Y_SERIES =
         categoria: 2
     }
 ]
+
+function actualizarCatalogo(catalogo){
+    const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
+    let nodo_linea
+    nodo_pelicualasYseries.innerHTML = '';
+
+    for(let i = 0; i < catalogo.length; i++){
+        if(i % 5 === 0){
+          nodo_linea = document.createElement('div')
+          nodo_linea.classList.add('linea')
+          nodo_pelicualasYseries.appendChild(nodo_linea)
+        }
+
+        let nodo_article = document.createElement('article')
+
+        let nodo_imagen = document.createElement('img')
+        nodo_imagen.src = catalogo[i].poster
+        nodo_imagen.alt = catalogo[i].título
+        nodo_imagen.height = 350;
+
+        let nodo_a = document.createElement('a')
+        nodo_a.href = "./detallePelicula.html"
+
+        nodo_a.appendChild(nodo_imagen)
+        nodo_article.appendChild(nodo_a)
+        nodo_linea.appendChild(nodo_article)
+
+    }
+}
+
+function filtrarPeliculas(){
+    let peliculas = []
+    for(let i = 0; i < PELICULAS_Y_SERIES.length; i++) {
+        if(PELICULAS_Y_SERIES[i].categoria === 1){
+            peliculas.push(PELICULAS_Y_SERIES[i])
+        }
+    }
+    return peliculas
+}
+
+function filtrarSeries(){
+    let series = []
+    for(let i = 0; i < PELICULAS_Y_SERIES.length; i++) {
+        if(PELICULAS_Y_SERIES[i].categoria === 2){
+            series.push(PELICULAS_Y_SERIES[i])
+        }
+    }
+    return series
+}
