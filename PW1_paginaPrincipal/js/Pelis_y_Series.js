@@ -10,12 +10,13 @@ const PELICULAS_Y_SERIES =
     },
 
     {
-        título: "The Love Witch",
-        genero: "Thriller/Terror",
-        sinopsis: "Elaine, una joven y hermosa bruja, está obsesionada con encontrar el amor verdadero. Se muda a una pequeña ciudad de California donde utiliza magia y hechizos para atraer a los hombres. Sin embargo, sus encantos tienen consecuencias trágicas y mortales. A medida que sus conjuros causan estragos, Elaine se ve atrapada en un enredo de pasión, locura y muerte, cuestionando la naturaleza del amor y el poder de la seducción. La película es una mezcla estilizada de terror y comedia, con una estética que rinde homenaje a los filmes de los años 60 y 70.",
-        duración: "2h",
-        poster: "./images/TheLoveWithc.jpg",
-        categoria: 1
+        título: "Gambito De Dama",
+        genero: "Drama",
+        sinopsis: "En un orfanato de los años 50, una chica exhibe un talento extraordinario para el ajedrez. A medida que su fama sube como la espuma, intenta superar su adicción.",
+        temporadas: 1,
+        duración: "46 min / 67 min",
+        poster: "./images/GambitoDeDamas.jpg",
+        categoria: 2
     },
 
     {
@@ -28,12 +29,13 @@ const PELICULAS_Y_SERIES =
     },
 
     {
-        título: "Fragmentado",
-        genero: "Thriller",
-        sinopsis: "Kevin Wendell Crumb es un hombre con trastorno de identidad disociativo, que posee 23 personalidades distintas. Una de sus personalidades, llamada 'La Bestia', empieza a dominar a las otras y lo impulsa a secuestrar a tres adolescentes: Casey, Claire y Marcia. Mientras las chicas intentan escapar, descubren más sobre las diversas personalidades de Kevin, algunas de las cuales intentan ayudarlas y otras que desean mantenerlas cautivas. A medida que 'La Bestia' se manifiesta, Casey debe usar su ingenio y valentía para intentar sobrevivir y enfrentarse a la amenaza que representa Kevin y sus múltiples identidades.",
-        duración: "1h 57m",
-        poster: "./images/Fragmentado.jpg",
-        categoria: 1
+        título: "El Maravilloso Mundo de Gumball",
+        genero: "Comedia/Familiar",
+        sinopsis: "Las aventuras de Gumball, un gato azul, junto con su familia en la ciudad de elmore",
+        temporadas: 6,
+        duración: "24 min",
+        poster: "./images/EIMDG.jpg",
+        categoria: 2
     },
 
     {
@@ -110,13 +112,12 @@ const PELICULAS_Y_SERIES =
     },
 
     {
-        título: "El Maravilloso Mundo de Gumball",
-        genero: "Comedia/Familiar",
-        sinopsis: "Las aventuras de Gumball, un gato azul, junto con su familia en la ciudad de elmore",
-        temporadas: 6,
-        duración: "24 min",
-        poster: "./images/EIMDG.jpg",
-        categoria: 2
+        título: "Fragmentado",
+        genero: "Thriller",
+        sinopsis: "Kevin Wendell Crumb es un hombre con trastorno de identidad disociativo, que posee 23 personalidades distintas. Una de sus personalidades, llamada 'La Bestia', empieza a dominar a las otras y lo impulsa a secuestrar a tres adolescentes: Casey, Claire y Marcia. Mientras las chicas intentan escapar, descubren más sobre las diversas personalidades de Kevin, algunas de las cuales intentan ayudarlas y otras que desean mantenerlas cautivas. A medida que 'La Bestia' se manifiesta, Casey debe usar su ingenio y valentía para intentar sobrevivir y enfrentarse a la amenaza que representa Kevin y sus múltiples identidades.",
+        duración: "1h 57m",
+        poster: "./images/Fragmentado.jpg",
+        categoria: 1
     },
 
     {
@@ -170,13 +171,12 @@ const PELICULAS_Y_SERIES =
     },
 
     {
-        título: "Gambito De Dama",
-        genero: "Drama",
-        sinopsis: "En un orfanato de los años 50, una chica exhibe un talento extraordinario para el ajedrez. A medida que su fama sube como la espuma, intenta superar su adicción.",
-        temporadas: 1,
-        duración: "46 min / 67 min",
-        poster: "./images/GambitoDeDamas.jpg",
-        categoria: 2
+        título: "The Love Witch",
+        genero: "Thriller/Terror",
+        sinopsis: "Elaine, una joven y hermosa bruja, está obsesionada con encontrar el amor verdadero. Se muda a una pequeña ciudad de California donde utiliza magia y hechizos para atraer a los hombres. Sin embargo, sus encantos tienen consecuencias trágicas y mortales. A medida que sus conjuros causan estragos, Elaine se ve atrapada en un enredo de pasión, locura y muerte, cuestionando la naturaleza del amor y el poder de la seducción. La película es una mezcla estilizada de terror y comedia, con una estética que rinde homenaje a los filmes de los años 60 y 70.",
+        duración: "2h",
+        poster: "./images/TheLoveWithc.jpg",
+        categoria: 1
     },
 
     {
@@ -189,6 +189,8 @@ const PELICULAS_Y_SERIES =
         categoria: 2
     }
 ]
+
+
 
 function actualizarCatalogo(catalogo){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')

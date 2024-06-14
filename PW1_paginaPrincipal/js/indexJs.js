@@ -1,5 +1,4 @@
 
-
 actualizarCatalogo(PELICULAS_Y_SERIES)
 
 function mostrarPeliculasYSeries(){
@@ -33,9 +32,15 @@ function mostrarSeries(){
 }
 
 function mostrarAviso(){
-
+    const nodo_salir = document.getElementById('cerrarSesion')
+    nodo_salir.addEventListener('click', (event) => {
+        event.preventDefault()
+        alert("Al salir, los datos guardados se pueden perder")
+    })
 }
 
+mostrarAviso()
 mostrarSeries()
 mostrarPeliculas()
 mostrarPeliculasYSeries()
+
