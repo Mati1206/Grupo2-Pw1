@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle de pelicula</title>
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
     <link rel="stylesheet" href="css/detalle.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/b70bec9694.js" crossorigin="anonymous"></script>
@@ -12,46 +14,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <main>
-    <header>
-        <div class="black_buster">
-            <a class="black_buster" href="index.html"> <h1>Black Buster</h1></a>
-        </div>
-        <section class="menu">
-          <a href= "index.html"><button class="menu home"><i class="fa-solid fa-house"></i>Home</button></a>
-          <a href= seccionPeliculas.html><button class="menu peliculas"><i class="fa-solid fa-film"></i>Películas</button></a>
-          <a href= seccionSeries.html><button class="menu series"><i class="fa-solid fa-film"></i>Series</button></a>
-          <a href= vistaPerfil.html><button class="menu perfil"><i class="fa-solid fa-user"></i>Perfil</button></a>
-        </section>
-      </header>
+        <header>
+            <div class="black_buster">
+                <a class="black_buster" href="index.html">
+                    <h1>Black Buster</h1>
+                </a>
+            </div>
+            <section class="menu">
+                <a href="index.html"><button class="menu home"><i class="fa-solid fa-house"></i>Home</button></a>
+                <a href=seccionPeliculas.html><button class="menu peliculas"><i
+                            class="fa-solid fa-film"></i>Películas</button></a>
+                <a href=seccionSeries.html><button class="menu series"><i
+                            class="fa-solid fa-film"></i>Series</button></a>
+                <a href=vistaPerfil.html><button class="menu perfil"><i class="fa-solid fa-user"></i>Perfil</button></a>
+            </section>
+        </header>
 
-    <nav></nav>
-  
-    <main>
-   <section class="grid">
-    <article class="foto">
-        <div class="imagen">
-            <iframe width="400em" height="250em" src="https://www.youtube.com/embed/2TAOizOnNPo?si=qFOSkM098vnBiwh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="boton">
-            <a target="_blank" href="https://www.youtube.com/watch?v=uYGj6rxxxZY"><button class="comenzar">Comenzar</button>  </a>
-        </div>
-        
-    </article>
-    
-    <article class="descripcion">
-        <p>Titulo: Rápidos y furiosos</p>
-        <p>Duracion:  1h 46 minutos</p>
-        <p>Genero: Comedia</p>
-        <p>Actores: <a target="_blank" href="https://es.wikipedia.org/wiki/Vin_Diesel">Vin Diesel</a>, <a target="_blank" href="https://es.wikipedia.org/wiki/Paul_Walker">Paul Walker</a></p>
-        <p>El oficial Brian O'Conner debe decidir dónde queda su lealtad cuando se enamora del mundo de las carreras callejeras, donde trabaja como agente encubierto con la misión de desaparecerlas.</p>
+        <nav></nav>
 
-    </article>
-    <article class="similares">
-        <h1>Similares</h1>
-        <section class="gridSimilares">
-            <div class="peli peli1">
+        <main>
+            <section class="grid">
+                <article class="foto">
+                    <div class="imagen">
+                        <iframe width="400em" height="250em"
+                            src="https://www.youtube.com/embed/2TAOizOnNPo?si=qFOSkM098vnBiwh1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="boton">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=uYGj6rxxxZY"><button
+                                class="comenzar">Comenzar</button> </a>
+                    </div>
+
+                </article>
+
+                <article class="descripcion">
+                    <p>Titulo: Rápidos y furiosos</p>
+                    <p>Duracion: 1h 46 minutos</p>
+                    <p>Genero: Comedia</p>
+                    <p>Actores: <a target="_blank" href="https://es.wikipedia.org/wiki/Vin_Diesel">Vin Diesel</a>, <a
+                            target="_blank" href="https://es.wikipedia.org/wiki/Paul_Walker">Paul Walker</a></p>
+                    <p>El oficial Brian O'Conner debe decidir dónde queda su lealtad cuando se enamora del mundo de las
+                        carreras callejeras, donde trabaja como agente encubierto con la misión de desaparecerlas.</p>
+
+                </article>
+                <article class="similares">
+                    <h1>Similares</h1>
+                    <!-- <section class="gridSimilares"> -->
+                    <!-- <div class="peli peli1">
                 <a href="detalleSerie.html"> <img class="fotoSerie" src="images/falloutDetalle.jpg" alt="Fallout"></a>
             </div>
     
@@ -67,10 +81,34 @@
             <div class="peli peli4">
                 <a href="detalleSerie.html"> <img class="fotoSerie" src="images/fullmetalDetalle.jpg" alt="FullMetal Alchemist"></a>
             </div>
-        </section>
-
-    </article>
-   </section>     
-    </main>
+        </section>  -->
+        <div class="carousel" data-flickity>
+            
+            <div class="carousel-cell">
+                <a href="detalleSerie.html">  <img class="carousel-cell__img " src="images/horaDeAventrura-carrousel.jpg" alt="">Hora de Aventura</a>
+            </div>
+            <div class="carousel-cell">
+                <a href="detallePelicula.html"> <img class="carousel-cell__img " src="images/fragmentado-carrousel.jpg" alt="Fragemtado"></a>
+            </div>
+            <div class="carousel-cell">
+               <a href="detalleSerie.html"><img class="carousel-cell__img" src="images/Gambito-de-Dama-carrousel.jpg" alt="Gambito de dama"></a>
+            </div>
+            <div class="carousel-cell">
+              <a href="detalleSerie.html"><img class="carousel-cell__img" src="images/fullmetalDetalle.jpg" alt="Fullmetal Alchemist"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="detallePelicula.html"><img class="carousel-cell__img" src="images/frozen-carrousel.jpg" alt="Frozen"></a>
+            </div>
+            <div class="carousel-cell">
+                <a href="detalleSerie.html"><img class="carousel-cell__img" src="images/losSimpsonDetalle.jpg" alt="Los simpsons"></a>
+            </div>
+          </div>
+                   
+                </article>
+            </section>
+        </main>
 </body>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/detallePelicula.js"></script>
+
 </html>
