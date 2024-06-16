@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle de pelicula</title>
+    <title>Información</title>
     <link rel="stylesheet" href="css/flickity.min.css" media="screen">
     <link rel="stylesheet" href="css/detalle.css">
     <link rel="stylesheet" href="css/index.css">
@@ -24,12 +24,16 @@
                 </a>
             </div>
             <section class="menu">
-                <a href="index.html"><button class="menu home"><i class="fa-solid fa-house"></i>Home</button></a>
-                <a href=seccionPeliculas.html><button class="menu peliculas"><i
+                <a href="./index.html"><button class="menu home" id="home"><i
+                            class="fa-solid fa-house"></i>Home</button></a>
+                <a href="./index.html"><button class="menu peliculas" id="peliculas"><i
                             class="fa-solid fa-film"></i>Películas</button></a>
-                <a href=seccionSeries.html><button class="menu series"><i
+                <a href="./index.html"><button class="menu series" id="series"><i
                             class="fa-solid fa-film"></i>Series</button></a>
-                <a href=vistaPerfil.html><button class="menu perfil"><i class="fa-solid fa-user"></i>Perfil</button></a>
+                <a href="./vistaPerfil.html"><button class="menu perfil"><i
+                            class="fa-solid fa-user"></i>Perfil</button></a>
+                <a href="./login.html"><button class="menu cerrarSesion" id="cerrarSesion"><i
+                            class="fa-sharp fa-solid fa-door-open"></i>Salir</button></a>
             </section>
         </header>
 
@@ -82,33 +86,40 @@
                 <a href="detalleSerie.html"> <img class="fotoSerie" src="images/fullmetalDetalle.jpg" alt="FullMetal Alchemist"></a>
             </div>
         </section>  -->
-        <div class="carousel" data-flickity>
-            
-            <div class="carousel-cell">
-                <a href="detalleSerie.html">  <img class="carousel-cell__img " src="images/horaDeAventrura-carrousel.jpg" alt="">Hora de Aventura</a>
-            </div>
-            <div class="carousel-cell">
-                <a href="detallePelicula.html"> <img class="carousel-cell__img " src="images/fragmentado-carrousel.jpg" alt="Fragemtado"></a>
-            </div>
-            <div class="carousel-cell">
-               <a href="detalleSerie.html"><img class="carousel-cell__img" src="images/Gambito-de-Dama-carrousel.jpg" alt="Gambito de dama"></a>
-            </div>
-            <div class="carousel-cell">
-              <a href="detalleSerie.html"><img class="carousel-cell__img" src="images/fullmetalDetalle.jpg" alt="Fullmetal Alchemist"></a>
-            </div>
-            <div class="carousel-cell">
-                <a href="detallePelicula.html"><img class="carousel-cell__img" src="images/frozen-carrousel.jpg" alt="Frozen"></a>
-            </div>
-            <div class="carousel-cell">
-                <a href="detalleSerie.html"><img class="carousel-cell__img" src="images/losSimpsonDetalle.jpg" alt="Los simpsons"></a>
-            </div>
-          </div>
-                   
+                    <div class="carousel" data-flickity>
+
+                        <div class="carousel-cell">
+                            <a href="./detallePeliculaOSerie.html"> <img class="carousel-cell__img "
+                                    src="images/horaDeAventrura-carrousel.jpg" alt="">Hora de Aventura</a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detallePeliculaOSerie.html"> <img class="carousel-cell__img "
+                                    src="images/fragmentado-carrousel.jpg" alt="Fragemtado"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detallePeliculaOSerie.html"><img class="carousel-cell__img"
+                                    src="images/Gambito-de-Dama-carrousel.jpg" alt="Gambito de dama"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detallePeliculaOSerie.html"><img class="carousel-cell__img"
+                                    src="images/fullmetalDetalle.jpg" alt="Fullmetal Alchemist"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detallePeliculaOSerie.html"><img class="carousel-cell__img"
+                                    src="images/frozen-carrousel.jpg" alt="Frozen"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detallePeliculaOSerie.html"><img class="carousel-cell__img"
+                                    src="images/losSimpsonDetalle.jpg" alt="Los simpsons"></a>
+                        </div>
+                    </div>
+
                 </article>
             </section>
         </main>
 </body>
+<script src="./js/Pelis_y_Series.js"></script>
 <script src="js/flickity.pkgd.min.js"></script>
-<script src="js/detallePelicula.js"></script>
+<script src="js/detallePeliculaOSerie.js"></script>
 
 </html>
