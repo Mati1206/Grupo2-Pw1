@@ -42,38 +42,54 @@
             <article class="datos">
             
                 <article class="datosUsuario">
-                    <form action="#" method="post" class="formDatos">
+                  
+                  
                         <p class="infoUsuario">Email:</p>
                         <p class="infoUsuario">Contraseña:</p>
                         <p class="infoUsuario">Nueva contraseña:</p>
                         <p class="infoUsuario">Repetir contraseña:</p>
+                    
                 </article>
-                <article class="formularios">
-                    <p class="infoUsuario">usuario@gmail.com</p>
-                    <p class="infoUsuario">****************</p>
-                    <p class="infoUsuario"><label for="nuevaContraseña"><input type="password" class="inputNuevayRepetirContraseña inputNuevaContraseña" id="nuevaContraseña"
-                                name="nuevaContraseña" placeholder="Ingrese nueva contraseña"></label></p>
-                    <p class="infoUsuario"> <label for="repetirContraseña"><input  class="inputNuevayRepetirContraseña inputRepetirContraseña" type="password"
-                                name="repetirContraseña" id="repetirContraseña"
-                                placeholder="Ingrese nueva contraseña"></label></p>
+                <article class="formularios" id="form">
+                    <form action="#" method="post" class="formDatos" id="form">
+                        <p class="infoUsuario">usuario@gmail.com</p>
+                        <p class="infoUsuario">****************</p>
+                        <p class="infoUsuario">
+                            <label for="nuevaContraseña">
+                                <input type="password" class="inputNuevayRepetirContraseña inputNuevaContraseña" id="nuevaContraseña" name="nuevaContraseña" placeholder="Ingrese nueva contraseña">
+                            </label>
+                            <div class="mensaje" id="error"></div>
+                        </p>
+                        <p class="infoUsuario">
+                            <label for="repetirContraseña">
+                                <input class="inputNuevayRepetirContraseña inputRepetirContraseña" type="password" name="repetirContraseña" id="repetirContraseña" placeholder="Ingrese nueva contraseña" >
+                            </label>
+                            <div class="mensajeRepetir" id="errorRepetirContraseña"></div>
+                        </p>
+                        <div class="botonGuardar">
+                            <button disabled type="submit" class="botonGuardarCambios">Guardar cambios</button>
+          
+                        </div>
+                        <div class="botonCancelar">
+                            <button class="botonCancelarSubcripcion">Cancelar suscripcion</button>
+                        </div>
+                        <div class="mensajeCorrecto" id="mensajeContraseñaCorrecta"></div>
+                    </form>
                 </article>
-
-
-                </form>
-
+                
 
             </article>
 
             <article class="metodoPago">
 
              
+
                 <article class="tarjetaCredito">
                     <article class="metodosDePago">
                         Metodos de Pago
                     </article>
                     <article class="radioTarjetaCredito">
-                        <input  type="radio" id="tarjetaDeCredito" name="pago" value="TajetaCredito"
-                            checked>
+                        <input type="radio" id="tarjetaDeCredito" name="pago" value="TajetaCredito" checked>
                         <label for="numeroTarjeta">Tarjeta de credito</label>
                     </article>
                     <article class="inputNumeroTarjeta">
@@ -81,8 +97,9 @@
                             placeholder="Numero de tarjeta" autocomplete="off">
                         <input class="xxx inputNumeroyCodigo" type="text" name="codigoTarjeta" id="codigoTarjeta" placeholder="XXX"
                             autocomplete="off">
+                        <p class="mensajeTarjeta" id="errorTarjeta"></p>
+                        <p class="mensajeCodigo" id="errorCodigo"></p>
                     </article>
-
                 </article>
 
 
@@ -91,11 +108,12 @@
                         <input type="radio" id="cuponPago" name="pago" value="cuponPago"> Cupon de pago
                     </article>
                     <article class="checkboxCuponPago">
-                        <input type="checkbox" id="pagoFacil" name="pagoFacil" value="pagoFacil">
+                        <input type="checkbox" id="pagoFacil" name="pagoFacil" value="pagoFacil" checked>
                         <label for="pagoFacil">Pago facil</label>
                         <input type="checkbox" id="rapiPago" name="rapiPago" value="rapiPago">
-                        <label for="pagoFacil">RapiPago</label>
+                        <label for="rapiPago">RapiPago</label>
                     </article>
+                    <p class="mensajeCupon" id="errorCupon"></p>
                 </article>
 
 
@@ -105,17 +123,11 @@
                 </article>
             </article>
         </section>
-       <article class="botones">
-            <div class="botonGuardar">
-                <a href="vistaPerfil.html"><button class="botonGuardarCambios">Guardar cambios</button></a>
-            </div>
-            <div class="botonCancelar">
-                <a href="vistaPerfil.html"><button class="botonCancelarSubcripcion">Cancelar suscripcion</button></a> 
-            </div>
-        </article>
+ 
     </main>
     <script src="./js/Pelis_y_Series.js"></script>
     <script src="./js/indexJs.js"></script>
+    <script src="js/vistaPerfil.js"></script>
 </body>
 
 </html>
