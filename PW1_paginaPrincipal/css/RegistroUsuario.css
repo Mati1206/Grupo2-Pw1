@@ -15,8 +15,14 @@ body {
     font-style: normal;
 
 }
-#error{
+#errort{
+    color: red;
+}
+#errorC{
 color: red;
+}
+#errorE{
+    color: red;
 }
 
 p, a {
