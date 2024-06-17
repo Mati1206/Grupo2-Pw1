@@ -44,10 +44,7 @@ function generarTrailer(){
       nodo_trailer.allowFullscreen = true;
      }
 
+    nodo_imagen.appendChild(nodo_trailer)
   }
-
- 
-
-
 }
 
