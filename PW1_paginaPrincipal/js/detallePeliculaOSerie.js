@@ -27,9 +27,4 @@ const flkty = new Flickity(carousel, {
   autoPlay: 1500,
 });
 
-function generarDescripcion(){
-  for(let i = 0; i < PELICULAS_Y_SERIES; i++){
-    
-  }
-}
 
