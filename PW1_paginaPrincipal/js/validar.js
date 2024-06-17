@@ -6,23 +6,48 @@ const contraseña= document.getElementById('contraseña')
 const nombre_titular=document.getElementById('nombre_titular')
 const tarjeta=document.getElementById('numero_tarjeta')
 const codigo= document.getElementById('codigo_seguridad')
+const mail =document.getElementById('email')
+const errores=document.getElementById('errores')
+const error2=document.getElementById('error2')
+const especial=document.getElementById('especial')
+const boton=document.getElementById('confirmar')
 
-nombre.addEventListener("input",function(event){ 
+nombre.addEventListener("blur",function(nombre){ 
     this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
-});
-apellido.addEventListener("input",function(event){ 
-    this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
+    if (nombre.value==""){ 
+        errores.innerHTML="El nombre solo puede contener letras"
+    }else { 
+        errores.innerHTML=""
+    }
+    return nombre.value
 });
 
-usuario.addEventListener("input",function(event){ 
+
+
+apellido.addEventListener("blur",function(event){ 
+    this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
+    if (apellido.value==""){ 
+        error2.innerHTML="El apellido solo puede contener letras"
+    }else { 
+        error2.innerHTML=""
+    }
+    return apellido.value
+});
+
+usuario.addEventListener("blur",function(event){ 
     this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ0123456789\s]/g,'')
+    if (usuario.value==""){ 
+        especial.innerHTML="El usuario no puede tener caracteres especiales"
+    }else { 
+        especial.innerHTML=""
+    }
 }) 
 const suma={
     item:[],
     total:0
 }
 tarjeta.addEventListener("input",function(event){ 
-    const error= document.getElementById('error')
+    const error= document.getElementById('errort')
     
     this.value=this.value.replace(/[^0123456789\s]/g,'')
     s= { 
@@ -41,24 +66,67 @@ nombre_titular.addEventListener("input",function(event){
     this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'')
 })
 
-codigo.addEventListener("input",function(event){ 
-    const error= document.getElementById('error')
+codigo.addEventListener("blur",function(event){ 
+    const error= document.getElementById('errorE')
     this.value=this.value.replace(/[^0123456789\s]/g,'')
-    
-  if(codigo.value[0]==0 && codigo.value[1]==0 && codigo.value[2]==0){ 
+  if(codigo.value[0]==0 && codigo.value[1]==0 && codigo.value[2]==0 ){ 
     codigo.value= ""
     error.innerHTML="Ingrese un numero distinto a 000" 
-    //alert("Ingrese un codigo valido")
-  } else {
+  } else if(codigo.value.length<3) {
+    error.innerHTML="El codigo tiene que contar con 3 digitos"
+    codigo.value=""
+  } else { 
     error.innerHTML=""
     return codigo
-    
-  }
-   
-   // if(codigo.value.length === 3){ 
-     //   alert("codigo correco")
-    //}else if (codigo.value.length=0 && codigo.value.length1=0){
-      //  alert("El numero es invalido")
-   // }
-})
+  } })
+mail.addEventListener("blur",function(event) { 
+    const error= document.getElementById('errorE')
+   campo= event.target; 
+   validar= /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+if (validar.test(campo.value)){ 
+    error.innerHTML=""
+} else {
+    error.innerHTML="El mail ingresado no es correcto"
+    mail.value=""   
+} })
 
+       form.addEventListener('submit', function (event) {
+        event.preventDefault(); 
+        const password = document.getElementById('contraseña').value;
+        const confirmarPassword = document.getElementById('confirmar_contraseña').value;
+        const errorc = document.getElementById('errorc');
+
+        if (password !== confirmarPassword) {
+            errorc.textContent = 'Las contraseñas no coinciden.';
+            errorc.style.color = 'red';
+            return;
+        }
+
+        if (validarContrasena(password)) {
+            this.submit(); 
+        } else {
+            errorc.textContent = 'Contraseña inválida. Debe tener al menos 8 caracteres, incluyendo 2 letras, 2 números y 2 caracteres especiales.';
+            errorc.style.color = 'red';
+        }
+        
+        
+    });
+
+    function validarContrasena(contrasena) {
+        const longitud = /^.{8,}$/;
+        const letras = /[a-zA-Z]/g;
+        const numeros = /\d/g;
+        const caract = /[!@#$%^&*(),.?":{}|<>]/g;
+        if (!longitud.test(contrasena)) {
+            return false;
+        }
+        const letra = contrasena.match(letras) ;
+        const num = contrasena.match(numeros) ;
+        const especi = contrasena.match(caract) ;
+
+        if (letra.length < 2 || num.length < 2 || especi.length < 2) {
+            return false;
+        }
+
+        return true;
+    }

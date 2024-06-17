@@ -28,26 +28,3 @@ const flkty = new Flickity(carousel, {
 });
 
 
-function generarTrailer(){
-  const nodo_imagen = document.querySelector('.imagen')
-
-  for(let i = 0; i < PELICULAS_Y_SERIES.length; i++){
-      if (PELICULAS_Y_SERIES[i].trailer) {
-      const nodo_trailer = document.createElement('iframe');
-      nodo_trailer.width = 560;
-      nodo_trailer.height = 315;
-      nodo_trailer.src = PELICULAS_Y_SERIES[i].trailer;
-      nodo_trailer.title = "YouTube video player";
-      //nodo_trailer.frameBorder = 0;
-      nodo_trailer.allow = 
-      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-      nodo_trailer.allowFullscreen = true;
-     }
-
-  }
-
- 
-
-
-}
-

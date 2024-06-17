@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Serie </title>
+    <link rel="stylesheet" href="css/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="css/detalle.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/b70bec9694.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="black_buster">
+                <a class="black_buster" href="index.html">
+                    <h1>Black Buster</h1>
+                </a>
+            </div>
+            <section class="menu">
+                <a href="./index.html"><button class="menu home" id="home"><i
+                            class="fa-solid fa-house"></i>Home</button></a>
+                <a href="./index.html"><button class="menu peliculas" id="peliculas"><i
+                            class="fa-solid fa-film"></i>Películas</button></a>
+                <a href="./index.html"><button class="menu series" id="series"><i
+                            class="fa-solid fa-film"></i>Series</button></a>
+                <a href="./vistaPerfil.html"><button class="menu perfil"><i
+                            class="fa-solid fa-user"></i>Perfil</button></a>
+                <a href="./login.html"><button class="menu cerrarSesion" id="cerrarSesion"><i
+                            class="fa-sharp fa-solid fa-door-open"></i>Salir</button></a>
+            </section>
+        </header>
+
+        <nav></nav>
+
+        <main>
+            <section class="grid">
+                <article class="foto">
+                    <div class="imagen">
+                        <iframe width="400em" height="250em"
+                            src="https://www.youtube.com/embed/oZn3qSgmLqI?si=rf59_bDRCD0_SVsr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="boton">
+                        <a target="_blank" href="https://www.youtube.com/watch?v=oZn3qSgmLqI"><button
+                                class="comenzar">Comenzar</button> </a>
+                    </div>
+
+                </article>
+
+                <article class="descripcion">
+                    <p>Titulo: Gambito de Dama</p>
+                    <p>Temporadas: 1</p>
+                    <p>Capitulos: 7</p>
+                    <p>Duracion: 46 a 67 min</p>
+                    <p>Genero: Drama</p>
+                    <p>Actores: <a target="_blank" href="https://es.wikipedia.org/wiki/Anya_Taylor-Joy">Anya Taylor-Joy</a></p>
+                    <p>"En un orfanato de los años 50, una chica exhibe un talento extraordinario para el ajedrez. 
+                        A medida que su fama sube como la espuma, intenta superar su adicción."</p>
+
+                </article>
+                <article class="similares">
+                    <h1>Similares</h1>
+                    <!-- <section class="gridSimilares"> -->
+                    <!-- <div class="peli peli1">
+                <a href="detalleSerie.html"> <img class="fotoSerie" src="images/falloutDetalle.jpg" alt="Fallout"></a>
+            </div>
+    
+            <div class="peli peli2">
+                <a href="detallePelicula.html">  <img class="fotoSerie" src="images/johnDetalle.jpg" alt="John Wick capitulo 4"></a>
+              
+            </div>
+    
+            <div class="peli peli3">
+                <a href="detalleSerie.html"> <img class="fotoSerie" src="images/losSimpsonDetalle.jpg" alt="Los simpsons"></a>
+            </div>
+
+            <div class="peli peli4">
+                <a href="detalleSerie.html"> <img class="fotoSerie" src="images/fullmetalDetalle.jpg" alt="FullMetal Alchemist"></a>
+            </div>
+        </section>  -->
+                    <div class="carousel" data-flickity>
+
+                        <div class="carousel-cell">
+                            <a href="./detalleSerie.html"> <img class="carousel-cell__img "
+                                    src="images/horaDeAventrura-carrousel.jpg" alt="">Hora de Aventura</a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detallePelicula.html"> <img class="carousel-cell__img "
+                                    src="images/fragmentado-carrousel.jpg" alt="Fragemtado"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detalleSerie.html"><img class="carousel-cell__img"
+                                    src="images/Gambito-de-Dama-carrousel.jpg" alt="Gambito de dama"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detalleSerie.html"><img class="carousel-cell__img"
+                                    src="images/fullmetalDetalle.jpg" alt="Fullmetal Alchemist"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detallePelicula.html"><img class="carousel-cell__img"
+                                    src="images/frozen-carrousel.jpg" alt="Frozen"></a>
+                        </div>
+                        <div class="carousel-cell">
+                            <a href="./detalleSerie.html"><img class="carousel-cell__img"
+                                    src="images/losSimpsonDetalle.jpg" alt="Los simpsons"></a>
+                        </div>
+                    </div>
+
+                </article>
+            </section>
+        </main>
+</body>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/detallePeliculaOSerie.js"></script>
+
+</html>

@@ -28,12 +28,16 @@
                 <br>             
                     <label for="nombre">Nombre:
                     <input id="nombre" type="text" name="nombre"  placeholder="Nombre" required></label>
+                    <p id="errores"></p>
                     <label for="apellido">Apellido:
                     <input id="apellido" type="text" name="apellido" placeholder="Apellido" required></label>
+                    <p id="error2"></p>
                     <label for="email">Correo electrónico:
                     <input id="email" type="email" name="email" placeholder="Correo Electrónico" required></label>
-                    <label for="usuario">Nombre de usuario:
+                    
+                                    <label for="usuario">Nombre de usuario:
                     <input id="usuario" type="text" name="usuario" placeholder="Nombre de Usuario" required></label>
+                    <p id="especial"></p>
                     <label for="contraseña">Contraseña:
                     <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required></label>
                     <label for="confirmar_contraseña">Repetir Contraseña:
@@ -56,7 +60,7 @@
                             <label for="numero_tarjeta">Número de Tarjeta:
                             <input id="numero_tarjeta" minlength="16" maxlength="19" type="text" name="numero_tarjeta" 
                             placeholder="Número de Tarjeta" ></label>
-                            <p id="error"></p>
+                            
                         </div>
                         <div class="campo">
                             <label for="nombre_titular">Nombre del Titular:
@@ -72,7 +76,7 @@
                             <label for="codigo_seguridad">Código de Seguridad:
                             <input id="codigo_seguridad" maxlength="3" type="text" name="codigo_seguridad" 
                             placeholder="CVC"></label>
-                            <p id="error"></p>
+                            
                         </div>
                     </div>
                 </article>
@@ -104,15 +108,23 @@
                 <div class="campo">
                     <button id="confirmar" class="boton_confirmar" type="submit">Confirmar</button>
                     <button  id="cancelar" class="boton_cancelar" type="reset">Cancelar</button>
+                    
                 </div>
+               
                 
+
             </section>
-        
+            <ul>
+                <li><p id="errorE"></p> </li>
+                <li><p id="errorc"></p></li>
+                <li><p id="errort"></p></li>
+            
     </form>
                 <footer>
                
                 </footer>
 <script src="./js/validar.js"></script>
+
 </body>
 
 </html>
