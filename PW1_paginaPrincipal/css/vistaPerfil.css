@@ -76,15 +76,6 @@
     padding: 1em;
 }
 
-.inputNuevaContraseña {
-    /* position: absolute; */
-    top: 40%;
-}
-
-.inputRepetirContraseña {
-    /* position: absolute; */
-    top: 55%;
-}
 
 .botonGuardarCambios {
     padding: 10px 20px;
@@ -116,9 +107,6 @@
     font-size: 15px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
-    position: absolute;
-    right: 28em;
-    bottom: 1em;
 }
 
 .botones {
@@ -130,10 +118,9 @@
 
 
 .botonGuardarCambios {
-    position: absolute;
-    left: 33em;
     padding: 10px 20px;
-    bottom: 1em;
+ 
+    margin-top: 5em;
 }
 
 .iconoUsuario {
@@ -152,6 +139,10 @@
 }
 
 @media screen and (max-width: 640px) {
+
+.nombreUsuario{
+    text-align: center;
+}
 
     .gridPrincipal {
         display: flex;
@@ -185,28 +176,30 @@
         position: relative
     }
 
+   .botonGuardarCambios{
+    margin-left: 1em;
+   }
+
+   .mensajeRepetir{
+    margin-left: 2em;
+   }
 }
 
 
 
 .mensaje {
-    position: absolute;
     width: 20em;
-    top: 21em;
-    left: 26.5em;
-    text-align: center;
-    margin: auto;
     color: red;
-
+margin-top: -2em;
+margin-left: 2em;
 }
 
 .mensajeRepetir {
-    position: absolute;
     text-align: center;
-    margin: auto;
+    margin-top: -2em;
+    margin-right: 6em;
     color:red;
-    bottom: 7.6em;
-    left: 27.6em;
+
 }
 
 .mensajeTarjeta {
@@ -216,9 +209,7 @@
 
 
 .mensajeCorrecto {
-    position: absolute;
-    left: 27.6em;
-    bottom: 7.6em;
+    margin-left: 2em;
     color: green;
 }
 
