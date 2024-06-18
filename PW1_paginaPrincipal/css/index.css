@@ -128,14 +128,6 @@ a{
     color: #d31818cc;
 }
 
-.div_advertencia{
-    margin: 40%;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-
 @media screen and ( min-width: 600px) and (max-width: 900px){
      .menu{
         width: 100%;
