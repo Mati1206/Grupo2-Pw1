@@ -2,14 +2,16 @@
     padding: 0;
     margin: 0;
 }
-.black_buster{
+
+.black_buster {
     color: #fff;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
-    
+
 }
+
 .gridPrincipal {
     display: grid;
     grid-template-columns: 20% 40% 40%;
@@ -28,7 +30,7 @@
     grid-template-rows: 25% 25% 25% 25%;
     grid-area: datos;
     grid-template-areas: "email email"
-                        "contraseñaUsuario ";
+        "contraseñaUsuario ";
 }
 
 .metodoPago {
@@ -74,78 +76,75 @@
     padding: 1em;
 }
 
-.inputNuevaContraseña{
-    position: absolute;
-    top: 40%;
-}
 
-.inputRepetirContraseña{
-    position: absolute;
-    top: 55%;
-}
-
-.botonGuardarCambios{
+.botonGuardarCambios {
     padding: 10px 20px;
-     background-color: #d31818cc;
-     border: solid 1px #d31818cc;
-     color: #fff;
-     font-size: 15px;
-     border-radius: 10px;
-     transition: background-color 0.3s, color 0.3s; 
+    background-color: #d31818cc;
+    border: solid 1px #d31818cc;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.botonGuardarCambios:hover{
+.botonGuardarCambios:hover {
     background-color: grey;
     color: #080808;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .botonCancelarSubcripcion:hover {
     background-color: grey;
-    color: #ffffff; 
-     cursor: pointer;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-.botonCancelarSubcripcion{
+.botonCancelarSubcripcion {
     padding: 10px 20px;
-     background-color: #ffffff;
-     border: solid 1px #ffffff;
-     color: #080808;
-     font-size: 15px;
-     border-radius: 10px;
-     transition: background-color 0.3s, color 0.3s; 
-    }
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    color: #080808;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-.botones{
+.botones {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 5em;
 }
 
 
-.botonGuardarCambios{
-    padding-inline: 1em;
+.botonGuardarCambios {
+    padding: 10px 20px;
+ 
+    margin-top: 5em;
 }
 
-.iconoUsuario{
+.iconoUsuario {
     font-size: 10em
 }
 
-.divIconoUsuario{
+.divIconoUsuario {
     display: flex;
     justify-content: center;
     margin-top: 1em;
 }
 
-.nombreUsuario{
+.nombreUsuario {
     margin-left: 1.5em;
     padding: 2em;
 }
 
-@media screen and (max-width: 640px){
-    
-    .gridPrincipal{
+@media screen and (max-width: 640px) {
+
+.nombreUsuario{
+    text-align: center;
+}
+
+    .gridPrincipal {
         display: flex;
         flex-direction: column;
     }
@@ -154,29 +153,67 @@
     .inputRepetirContraseña {
         display: flex;
         flex-direction: column;
-        position:relative
+        position: relative
     }
 
-    .metodoPago{
+    .metodoPago {
         display: flex;
-       flex-direction: column;
-        justify-content:space-between;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: stretch;
-        position: relative    
-
+        position: relative
     }
 
     .metodosDePago {
         padding: 2em;
         padding-left: 2em;
-        position: relative    
-
+        position: relative
     }
-    
+
     .cuponDePago {
         display: flex;
-flex-direction: column;
-position: relative    
+        flex-direction: column;
+        position: relative
     }
-    
+
+   .botonGuardarCambios{
+    margin-left: 1em;
+   }
+
+   .mensajeRepetir{
+    margin-left: 2em;
+   }
+}
+
+
+
+.mensaje {
+    width: 20em;
+    color: red;
+margin-top: -2em;
+margin-left: 2em;
+}
+
+.mensajeRepetir {
+    text-align: center;
+    margin-top: -2em;
+    margin-right: 6em;
+    color:red;
+
+}
+
+.mensajeTarjeta {
+    color: yellow;
+
+}
+
+
+.mensajeCorrecto {
+    margin-left: 2em;
+    color: green;
+}
+
+.mensajeCupon{
+    position: absolute;
+    bottom: 13em;
 }
