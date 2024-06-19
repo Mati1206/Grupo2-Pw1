@@ -12,7 +12,8 @@ const error2=document.getElementById('error2')
 const especial=document.getElementById('especial')
 const boton=document.getElementById('confirmar')
 
-nombre.addEventListener("blur",function(nombre){ 
+nombre.addEventListener("blur",function(event){ 
+
     this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
     if (nombre.value==""){ 
         errores.innerHTML="El nombre solo puede contener letras"
@@ -42,10 +43,6 @@ usuario.addEventListener("blur",function(event){
         especial.innerHTML=""
     }
 }) 
-const suma={
-    item:[],
-    total:0
-}
 tarjeta.addEventListener("input",function(event){ 
     const error= document.getElementById('errort')
     
@@ -108,8 +105,7 @@ if (validar.test(campo.value)){
             errorc.textContent = 'Contraseña inválida. Debe tener al menos 8 caracteres, incluyendo 2 letras, 2 números y 2 caracteres especiales.';
             errorc.style.color = 'red';
         }
-        
-        
+     
     });
 
     function validarContrasena(contrasena) {
