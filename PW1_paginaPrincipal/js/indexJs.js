@@ -1,12 +1,12 @@
 
-const catalogo_comlpeto = JSON.parse(localStorage.getItem('catalogo'))
-
-actualizarCatalogo(catalogo_comlpeto)
+actualizarCatalogo(PELICULAS_Y_SERIES)
 
 function mostrarPeliculasYSeries(){
+    let catalogo_comlpeto
     const nodo_catalogoCompleto = document.querySelector('.home')
     nodo_catalogoCompleto.addEventListener('click', (event) =>{
        event.preventDefault()
+       catalogo_comlpeto = PELICULAS_Y_SERIES
        actualizarCatalogo(catalogo_comlpeto)
     })
 }
@@ -29,14 +29,6 @@ function mostrarSeries(){
         catalogo_series = filtrarSeries()
         actualizarCatalogo(catalogo_series)
     })
-}
-
-function limpiarCatalogo(){
-   const nodo_btn_salir = document.getElementById('salir')
-   nodo_btn_salir.addEventListener('click', (event) => {
-    event.preventDefault()
-    localStorage.clear
-   })
 }
 
 
