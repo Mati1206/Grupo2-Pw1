@@ -1,14 +1,14 @@
-.black_buster{
+.black_buster {
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
     color: white;
-    
 }
-html, body,main { 
-width: 100%;
-height: 100%;
+
+html, body, main {
+    width: 100%;
+    height: 100%;
     background-color: black;
     color: aliceblue;
     background-image: url("../images/fondiii.png");
@@ -18,39 +18,40 @@ height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
 }
-p, a{ 
-    color: aliceblue; 
+
+p, a {
+    color: aliceblue;
     text-decoration: none;
 }
 
-.inicio{ 
+.inicio {
     color: red;
     display: block;
-  text-align: end;
-  
+    text-align: end;
 }
 
-.contenedor { 
+.contenedor {
     display: grid;
     flex-direction: column;
     width: 65%;
     justify-content: center;
-  grid-template-columns: 33% 33% 34%; 
-  grid-template-rows: 20% 20% 20% 20% 20%;
-  left: 35%;
-position: absolute;
-top: 25%;
-  
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: repeat(5, 20%);
+    position: absolute;
+    left: 35%;
+    top: 25%;
 }
-.campo1 { 
+
+.campo1 {
     display: grid;
     grid-column: 1/2;
     grid-row: 2/3;
-  justify-content: flex-end;
-  position: relative;
-  right: 20%;
+    justify-content: flex-end;
+    position: relative;
+    right: 20%;
 }
-.campo2{
+
+.campo2 {
     display: grid;
     grid-column: 2/2;
     grid-row: 2/3;
@@ -58,73 +59,78 @@ top: 25%;
     position: relative;
     top: 40%;
 }
+
 .email {
-   border: 2px solid white;
-   border-radius: 8px;
+    border: 2px solid white;
+    border-radius: 8px;
 }
-.campo3 { 
+
+.campo3 {
     display: grid;
     justify-content: flex-end;
     grid-column: 1/2;
     grid-row: 3/4;
     position: relative;
-  right: 20%;
-
+    right: 20%;
 }
-.campo4{
+
+.campo4 {
     display: grid;
     grid-column: 2/2;
     grid-row: 3/4;
     height: 2%;
     position: relative;
     top: 25%;
-    
 }
-.usuario { 
+
+.usuario {
     border: 2px solid white;
-   border-radius: 8px;
+    border-radius: 8px;
 }
-.campo5 { 
+
+.campo5 {
     display: grid;
     grid-column: 1/3;
     grid-row: 4/5;
     width: 50%;
     position: relative;
-    left: 15em;   
+    left: 15em;
     justify-content: center;
 }
-.campo6 { 
+
+.campo6 {
     display: grid;
     grid-column: 2/3;
     grid-row: 4/5;
-    position:relative;
+    position: relative;
     justify-content: center;
     width: 50%;
     left: 10em;
 }
-.campo7{ 
+
+.campo7 {
     display: grid;
     grid-column: 1/3;
     justify-content: center;
 }
-.boton1 { 
+
+.boton1 {
     padding: 10px 20px;
     background-color: #d31818cc;
     border: solid 1px #d31818cc;
     color: #fff;
     font-size: 15px;
     border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s; 
-
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.boton1:hover{
-   background-color: grey;
-   color: #080808;
-   cursor: pointer;
+.boton1:hover {
+    background-color: grey;
+    color: #080808;
+    cursor: pointer;
 }
 
-.boton2 { 
+.boton2 {
     padding: 12px 30px;
     background-color: #ffffff;
     border: solid 1px #ffffff;
@@ -134,84 +140,77 @@ top: 25%;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.boton2:hover{
+.boton2:hover {
     background-color: grey;
-    color: #080808; 
+    color: #080808;
     cursor: pointer;
 }
 
-@media screen and (width <600px){ 
-    html, body { 
-       
-        
-    }
-    .contenedor { 
-        display: grid;
-        flex-direction: column;
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        width: 90%;
+        left: 5%;
+        top: 10%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7, 1fr);
-       position: absolute;
-       left: 25px;
-       height: 60%;
-
     }
-    .campo7{
+
+    .campo7 {
         grid-column: 1/2;
-        grid-row: 1/2; 
+        grid-row: 1/2;
         position: relative;
         bottom: -50%;
-        
-        
     }
-    .campo1{
+
+    .campo1 {
         text-align: start;
         grid-column: 1/2;
         grid-row: 2/3;
         position: relative;
-     
         left: -40%;
         bottom: -50%;
     }
-    .campo2{
+
+    .campo2 {
         text-align: center;
         grid-column: 1/2;
         grid-row: 3/4;
-       
     }
-    .campo3{ 
+
+    .campo3 {
         grid-row: 1/2;
-        grid-row: 4/5; 
-       
-      
+        grid-row: 4/5;
     }
-    .campo4{ 
+
+    .campo4 {
         grid-column: 1/2;
         grid-row: 5/6;
         position: relative;
-     
         top: -15%;
-       
     }
-    .campo5{
+
+    .campo5 {
         grid-column: 1/2;
         grid-row: 6/7;
-        position:relative;
+        position: relative;
         left: 20%;
     }
-   .campo6{ 
-    grid-column: 1/2;
-    grid-row: 7/8;
-    position: relative;
-    top: 25%;
-    left: 20%;
-   }
 
-   li{
-    display: flex;
-    text-align: center;
-}
-h1{
-    text-align: center;
-}
+    .campo6 {
+        grid-column: 1/2;
+        grid-row: 7/8;
+        position: relative;
+        top: 25%;
+        left: 20%;
+    }
 
+    li {
+        display: flex;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
 }
