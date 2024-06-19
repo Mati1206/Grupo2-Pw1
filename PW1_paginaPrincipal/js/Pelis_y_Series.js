@@ -11,7 +11,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Gambito De Dama",
-        genero: "Drama",
+        genero: "Novela",
         sinopsis: "En un orfanato de los años 50, una chica exhibe un talento extraordinario para el ajedrez. A medida que su fama sube como la espuma, intenta superar su adicción.",
         temporadas: 1,
         duración: "46 min / 67 min",
@@ -21,7 +21,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Frozen",
-        genero: "Familiar/Fantasía",
+        genero: "Fantasía",
         sinopsis: "En el reino de Arendelle, la joven princesa Elsa posee poderes mágicos que le permiten crear hielo y nieve. Tras un accidente durante su infancia, Elsa se aísla del mundo, incluyendo de su hermana menor, Anna. Cuando Elsa accidentalmente desata un invierno eterno en Arendelle durante su coronación, huye al monte y se refugia en un palacio de hielo. Anna, con la ayuda de un valiente montañés llamado Kristoff, su reno Sven y un divertido muñeco de nieve llamado Olaf, emprende una aventura épica para encontrar a Elsa y salvar el reino del invierno perpetuo, redescubriendo el vínculo especial que las une como hermanas.",
         duración: "1h 42m",
         poster: "./images/Frozen.jpg",
@@ -30,7 +30,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "El Maravilloso Mundo de Gumball",
-        genero: "Comedia/Familiar",
+        genero: "Caricatura",
         sinopsis: "Las aventuras de Gumball, un gato azul, junto con su familia en la ciudad de elmore",
         temporadas: 6,
         duración: "24 min",
@@ -58,7 +58,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Querida, encogí a los niños",
-        genero: "Comedia/Familiar",
+        genero: "Familiar",
         sinopsis: "El excéntrico inventor Wayne Szalinski crea una máquina para encoger objetos, pero su experimento parece ser un fracaso. Todo cambia cuando, accidentalmente, la máquina encoge a sus hijos, Amy y Nick, junto con los niños del vecino, Ron y Russ. Ahora, del tamaño de insectos, los cuatro niños deben enfrentarse a los peligros del jardín trasero, que se ha convertido en un vasto y peligroso terreno. Mientras Wayne y su esposa Diane intentan desesperadamente encontrarlos y revertir el proceso, los niños deben usar su ingenio y trabajar juntos para sobrevivir y volver a su tamaño normal. La película combina aventura, comedia y efectos especiales innovadores, convirtiéndola en un clásico familiar.",
         duración: "1h 33m",
         poster: "./images/CHEALN.jpg",
@@ -67,7 +67,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "El Secreto De Sus Ojos",
-        genero: "Crimen/Suspenso",
+        genero: "Misterio",
         sinopsis: "Un juez tiene dudas acerca de los planes de un oficial de justicia recientemente retirado que intenta descubrir al culpable de la violación y el asesinato de una joven, crimen ocurrido varias décadas atrás.",
         duración: "2h 9m",
         poster: "./images/ESEDSO.jpg",
@@ -76,7 +76,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Crepusculo",
-        genero: "Romance/Sobrenatural",
+        genero: "Sobrenatural",
         sinopsis: "Bella Swan se va a vivir con su padre al pequeño pueblo de Forks, donde conoce a Edward, un atractivo y misterioso chico del que se enamora y quien esconde un gran secreto: es un vampiro. Pero la familia del chico guarda una peculiaridad, y es que no se alimenta de sangre humana.",
         duración: "2h 2m",
         poster: "./images/Crepusculo.jpg",
@@ -94,7 +94,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Scream",
-        genero: "Terror/Misterio",
+        genero: "Terror",
         sinopsis: "Un asesino en serie, que viste una máscara blanca y una túnica negra, siembra el pánico entre los adolescentes de un pueblo californiano.",
         duración: "1h 51m",
         poster: "./images/Scream.jpg",
@@ -103,7 +103,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Los Simpsons",
-        genero: "Comedia/Familiar",
+        genero: "Comedia",
         sinopsis: "El día a día de la familia Simpsons en Springfield, una ciudad de los Estados Unidos",
         temporadas: 35,
         duración: "24 min",
@@ -113,7 +113,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Fragmentado",
-        genero: "Thriller",
+        genero: "Suspenso",
         sinopsis: "Kevin Wendell Crumb es un hombre con trastorno de identidad disociativo, que posee 23 personalidades distintas. Una de sus personalidades, llamada 'La Bestia', empieza a dominar a las otras y lo impulsa a secuestrar a tres adolescentes: Casey, Claire y Marcia. Mientras las chicas intentan escapar, descubren más sobre las diversas personalidades de Kevin, algunas de las cuales intentan ayudarlas y otras que desean mantenerlas cautivas. A medida que 'La Bestia' se manifiesta, Casey debe usar su ingenio y valentía para intentar sobrevivir y enfrentarse a la amenaza que representa Kevin y sus múltiples identidades.",
         duración: "1h 57m",
         poster: "./images/Fragmentado.jpg",
@@ -122,7 +122,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Fallout",
-        genero: "Acción/Drama",
+        genero: "Acción",
         sinopsis: "En un futuro posapocalíptico provocado por la devastación nuclear, los ciudadanos de Los Ángeles deben vivir en búnkeres subterráneos para protegerse de la radiación, los mutantes y los bandidos.",
         temporadas: 1,
         duración: "1h",
@@ -142,7 +142,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Hora de Aventura",
-        genero: "Comedia/Fantasía",
+        genero: "Caricaturas",
         sinopsis: "narra las extravagantes, coloridas y a menudo absurdas y divertidas aventuras de un niño llamado Finn y su amigo canino parlante, Jake , que se unen para divertirse en la mística Tierra de Ooo.",
         temporadas: 10,
         duración: "15 min",
@@ -152,7 +152,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Fullmetal Alchemist",
-        genero: "Acción/Fantasía",
+        genero: "Anime",
         sinopsis: "dos hermanos que intentaron resucitar a su madre muerta usando una ciencia muy antigua y secreta de la alquimia. Pero el ritual sale mal y el cuerpo de uno de ello se desmaterializa y su mente queda atrapada para siempre en una armadura de metal.",
         temporadas: 1,
         duración: "24 min",
@@ -162,7 +162,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Gossip Girl",
-        genero: "Drama/Romance",
+        genero: "Novela",
         sinopsis: " se basa en Gossip Girl, el cual es un blog en Internet muy conocido, en donde se narra día a día chismes, conflictos amorosos, familiares y económicos de un grupo de jóvenes multimillonarios de la elite de Manhattan.",
         temporadas: 6,
         duración: "42 min",
@@ -172,7 +172,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "The Love Witch",
-        genero: "Thriller/Terror",
+        genero: "Suspenso",
         sinopsis: "Elaine, una joven y hermosa bruja, está obsesionada con encontrar el amor verdadero. Se muda a una pequeña ciudad de California donde utiliza magia y hechizos para atraer a los hombres. Sin embargo, sus encantos tienen consecuencias trágicas y mortales. A medida que sus conjuros causan estragos, Elaine se ve atrapada en un enredo de pasión, locura y muerte, cuestionando la naturaleza del amor y el poder de la seducción. La película es una mezcla estilizada de terror y comedia, con una estética que rinde homenaje a los filmes de los años 60 y 70.",
         duración: "2h",
         poster: "./images/TheLoveWithc.jpg",
@@ -181,7 +181,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Phineas y Ferb",
-        genero: "Comedia/Familiar",
+        genero: "Familiar",
         sinopsis: "Phineas y Ferb son dos hermanastros que quieren disfrutar al máximo de las vacaciones de verano. No dejan de hacer trastadas y de inventar instrumentos imposibles como un monopatín gigante para sufrimiento de su hermana mayor Candace, que no les aguanta.",
         temporadas: 4,
         duración: "22 min",
@@ -227,21 +227,13 @@ function actualizarCatalogo(catalogo){
 
 function filtrarPeliculas(){
     let peliculas = []
-    for(let i = 0; i < PELICULAS_Y_SERIES.length; i++) {
-        if(PELICULAS_Y_SERIES[i].categoria === 1){
-            peliculas.push(PELICULAS_Y_SERIES[i])
-        }
-    }
+    peliculas = PELICULAS_Y_SERIES.filter(item => item.categoria === 1)
     return peliculas
 }
 
 function filtrarSeries(){
     let series = []
-    for(let i = 0; i < PELICULAS_Y_SERIES.length; i++) {
-        if(PELICULAS_Y_SERIES[i].categoria === 2){
-            series.push(PELICULAS_Y_SERIES[i])
-        }
-    }
+    series = PELICULAS_Y_SERIES.filter(item => item.categoria === 2)
     return series
 }
 
