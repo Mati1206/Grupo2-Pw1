@@ -35,7 +35,7 @@ function limpiarCatalogo(){
    const nodo_btn_salir = document.getElementById('salir')
    nodo_btn_salir.addEventListener('click', (event) => {
     event.preventDefault()
-    
+    localStorage.clear
    })
 }
 
