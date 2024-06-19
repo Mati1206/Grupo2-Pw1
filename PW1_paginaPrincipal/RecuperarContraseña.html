@@ -18,18 +18,22 @@
             <a class="black_buster" href="login.html"> <h1>Black Buster</h1></a> 
         </header>
 
-        <form class="form-recuperar" id="campo" action="./login.html" onsubmit="return validateForm()">
+        <form class="form-recuperar" id="campo" action="">
             <ul class="contenedor"> 
                 <li class="campo7"><h2>Recuperar contraseña</h2></li>
                 <li class="campo1"><h5>E-mail</h5></li>
                 <li class="campo2"><input id="email" class="email" type="email" name="email" placeholder="Ingrese su correo electrónico"></li>
                 <li class="campo3"><h5>Nombre de usuario</h5></li>
                 <li class="campo4"><input id="usuario" class="usuario" type="text" name="usuario" placeholder="Ingrese nombre de usuario"></li>
-                <li class="campo5"><button id="button" class="boton1" type="submit" disabled>Enviar email</button></li>
-                <li class="campo6"><a href="./login.html"><button id="button2" class="boton2" type="button">Cancelar</button></a></li>
+                <li class="campo5"><button id="button" class="boton1" type="submit" >Enviar email</button></li>
+                <li class="campo6"><a href="./login.html"><button id="button2" class="boton2" type="button">Cancelar</button> <p id="error"></p></a></li>
+                
             </ul>
+          
         </form>
+       
     </main>
+    
     <script src="js/RecuperarContraseña.js"></script>
 </body>
 </html>
