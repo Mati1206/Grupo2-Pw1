@@ -32,16 +32,18 @@ function mostrarSeries(){
     })
 }
 
+
 function buscarPorNombre(){
-    const nodo_buscar = document.getElementById('PeliculasYSeries');
+    const nodo_buscar = document.getElementById('PeliculasYSeries')
     nodo_buscar.addEventListener('input', (event) => {
-        const query = event.target.value.toLowerCase();
-        const resultados = PELICULAS_Y_SERIES.filter(item => item.nombre.toLowerCase().includes(query));
-        actualizarCatalogo(resultados);
-    });
+        const busqueda = event.target.value.toLowerCase();
+        const resultado = PELICULAS_Y_SERIES.filter(item => item.título.toLowerCase().includes(busqueda))
+        actualizarCatalogo(resultado)
+    })
 }
 
 
+buscarPorNombre()
 mostrarSeries()
 mostrarPeliculas()
 mostrarPeliculasYSeries()
