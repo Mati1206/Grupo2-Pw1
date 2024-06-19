@@ -8,7 +8,7 @@ document.getElementById('campo').addEventListener('submit', function(event) {
 
     if (usuarioEncontrado) {
         error.textContent=""
-       window.location.href='login.html'
+       window.location.href='index.html'
     } else {
       error.textContent="Email o nombre de usuario incorrecto"
       error.style.color="red"

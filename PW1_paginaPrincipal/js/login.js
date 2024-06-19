@@ -9,7 +9,7 @@ document.getElementById('campo').addEventListener('submit', function(event) {
     if (usuarioEncontrado) {
         localStorage.setItem('usuarioLogueado', JSON.stringify(usuarioEncontrado));
         error.textContent=""
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     } else {
         error.textContent="Usuario o contraseña incorrecto"
         error.style.color="red"

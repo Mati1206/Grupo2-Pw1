@@ -3,75 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://kit.fontawesome.com/b70bec9694.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Inicia Sesion</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
-  <main>
-  <header>
-    <header class="black_buster">
-      <a class="black_buster" href="index.html"> <h1>Black Buster</h1></a>
-
-    <section class="menu">
-     <button class="menu home" id = "home"><i class="fa-solid fa-house"></i>Home</button>
-     <button class="menu peliculas" id="peliculas"><i class="fa-solid fa-film"></i>Películas</button>
-     <button class="menu series" id ="series"><i class="fa-solid fa-film"></i>Series</button>
-     <a href= "./vistaPerfil.html"><button class="menu perfil" id="perfil"><i class="fa-solid fa-user"></i>Perfil</button></a>
-     <a href="./aviso.html"><button class="menu cerrarSesion" id="cerrarSesion"><i class="fa-sharp fa-solid fa-door-open"></i>Salir</button></a>
-    </i>
-    </section>
-  </header>
-
-    <section class="navegadorYGeneros">
-        <article class="navegadorYGeneros navegador"> 
-            <nav>
-                <form>
-                    <label for="PeliculasYSeries"></label>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input  class="navegador barraNav" type="text" name="PeliculasYSeries" id="PeliculasYSeries" placeholder="Buscar por nombre" autofocus>
-                    <input class="botonBuscar" type="submit" value="Buscar">
-                </form>
-            </nav>
-        </article>
-
-        <article class="navegadorYGeneros generos">
-            <form action="#" method="post">
-                <datalist id="categoria">
-                 <option value="Comedia"></option>
-                 <option value="Romance"></option>
-                 <option value="Terror"></option>
-                 <option value="Suspenso"></option>
-                 <option value="Fantasia"></option>
-                 <option value="Acción"></option>
-                 <option value="Caricaturas"></optoon>
-                 <option value="Anime"></option>
-                 <option value="Novela"></option>
-                 <option value="Familiar"></option>
-                </datalist>
-                 <label for="categoria" class="fuenteG">Por Generos </label>
-                <input class="gender" type="text" name="categoria" list="categoria" id="generos" placeholder="Seleccionar categoría">
-                </form>
-        </article>
-    </section>
-<br>
-    
-        <section class="peliculasYSeries" id="section_peliculasYSeries">
-          <article class="linea">
-
-          </article>
-         </section>
+    <main>
+      <header class="black_buster">
+        <a class="black_buster" href="index.html"> <h1>Black Buster</h1></a>
+        <img class="banner" src="images/BannerLogin.jpg">
+    </header>
+        
+        <form class="form-login" id="campo" action="">
+          <ul class="contenedor">  
+                <li class="campo8"><h2>Bienvenido</h2></li>
+                <li class="campo1"><h5>Nombre de usuario</h5></li>
+                <li class="campo2"><input id="Usuario" class="usuario" type="text" name="Usuario" placeholder="Nombre de Usuario"></li>
+                <li class="campo3"><h5>Contraseña</h5></li>
+                <li class="campo4"><input id="contraseña" class="contraseña" type="password" name="Contraseña" placeholder="Ingrese contraseña"></li>
+                <li class="campo5"><p id="error"></p><button id="button" class="boton" type="submit">Iniciar Sesión</button></li>  
+                <li class="campo6"><p><a href="RecuperarContraseña.html">Recuperar contraseña</a></p></li>
+                <li class="campo7"><p><a href="RegistroUsuario.html">Registrarme</a></p></li>
+            </ul>
+          
+        </form>
     </main>
-
-    <footer>
-     
-    </footer>
-    <script src="./js/Pelis_y_Series.js"></script>
-    <script src="./js/indexJs.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>

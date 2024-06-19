@@ -23,5 +23,5 @@ document.getElementById('registro').addEventListener('submit', function(event) {
 
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
-    window.location.href = 'login.html';
+    window.location.href = 'home.html';
 });
