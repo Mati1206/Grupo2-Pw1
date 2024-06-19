@@ -32,7 +32,14 @@ function mostrarSeries(){
     })
 }
 
-
+function buscarPorNombre(){
+    const nodo_buscar = document.getElementById('PeliculasYSeries');
+    nodo_buscar.addEventListener('input', (event) => {
+        const query = event.target.value.toLowerCase();
+        const resultados = PELICULAS_Y_SERIES.filter(item => item.nombre.toLowerCase().includes(query));
+        actualizarCatalogo(resultados);
+    });
+}
 
 
 mostrarSeries()
