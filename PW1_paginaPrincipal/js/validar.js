@@ -105,14 +105,15 @@ if (validar.test(campo.value)){
         }
 
         if (validarContrasena(password)) {
-            //this.submit(); 
+            this.submit(); 
             const USUARIO = {
                 nombreUsuario: usuario.value
-            }
 
+            }
+            
             localStorage.setItem('Nombre de usuario', JSON.stringify(USUARIO))
            
-            this.submit()
+         
         } else {
             errorc.textContent = 'Contraseña inválida. Debe tener al menos 8 caracteres, incluyendo 2 letras, 2 números y 2 caracteres especiales.';
             errorc.style.color = 'red';
