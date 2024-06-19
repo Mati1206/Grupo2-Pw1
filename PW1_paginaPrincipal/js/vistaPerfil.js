@@ -139,8 +139,12 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const nombreUsuarioElemento = document.querySelector('.nombreUsuario');
     const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
+const usu=document.getElementById('usu')
 
-    if (usuarioLogueado && usuarioLogueado.usuario) {
+    if (usuarioLogueado && usuarioLogueado.usuario && usuarioLogueado.email ) {
         nombreUsuarioElemento.textContent = usuarioLogueado.usuario;
+        usu.textContent= usuarioLogueado.email
+       
+
     }
 });
