@@ -62,6 +62,7 @@ tarjeta.addEventListener("input",function(event){
         error.innerHTML="Tiene que contar como minimo 16 caracteres y como maximo 19"
     }
 })
+
 nombre_titular.addEventListener("input",function(event){ 
     this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'')
 })
