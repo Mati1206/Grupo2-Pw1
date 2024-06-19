@@ -39,7 +39,7 @@ a{
 }
 
 
-.navegadorYCategorias{
+.navegadorYGeneros{
     display: flex;
     flex-direction: row;
     width: calc(200%/2);
@@ -49,7 +49,7 @@ a{
     margin-top: 30px;
     margin-left: 40px;
 }
-.categorias{
+.generos{
     margin-top: 60px;
 }
 .barraNav{
@@ -83,7 +83,7 @@ a{
         cursor: pointer;
     }
 
-.category{
+.gender{
     padding: 10px 20px;
     width: 300px;
     margin-right: 5px;
@@ -91,7 +91,7 @@ a{
     border: solid 2px #727272;
     color: #ecf0f1a9;
 }
-.fuenteC{
+.fuenteG{
     font-size: 22px;
     color:#ecf0f1a9;
     padding: 10px 20px;
@@ -138,13 +138,13 @@ a{
         padding: 10px 48px;
       }
 
-      .navegadorYCategorias{
+      .navegadorYGeneros{
         width: 100%;
         flex-direction: column;
       }
 
        
-      .fuenteC{
+      .fuenteG{
         display: none;
       }
 
@@ -154,13 +154,13 @@ a{
         margin-left: 20px;
       }
 
-      .category{
+      .gender{
         position: static;
         width: 40%;
         margin-left: 90px;
       }
 
-      .category,.barraNav,.botonBuscar{
+      .gender,.barraNav,.botonBuscar{
         position: static;
         padding: 20px;
       }
@@ -235,7 +235,7 @@ a{
         display: grid;
         flex-direction: column;
     }
-    .navegadorYCategorias{
+    .navegadorYGeneros{
         display: grid;
         width: 100%;
         text-align: start;
@@ -246,13 +246,13 @@ a{
     .barraNav{
         width: 200px;
     }
-    .navegadorYCategorias.categorias{
+    .navegadorYGeneros, .generos{
     
         display: flex;
         justify-content: center;
         text-align: center;
     }
-    .category{
+    .gender{
         width: 220px;
     }
 }

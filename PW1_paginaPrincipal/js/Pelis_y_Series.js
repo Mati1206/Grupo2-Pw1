@@ -21,7 +21,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Frozen",
-        genero: "Fantasía",
+        genero: "Fantasia",
         sinopsis: "En el reino de Arendelle, la joven princesa Elsa posee poderes mágicos que le permiten crear hielo y nieve. Tras un accidente durante su infancia, Elsa se aísla del mundo, incluyendo de su hermana menor, Anna. Cuando Elsa accidentalmente desata un invierno eterno en Arendelle durante su coronación, huye al monte y se refugia en un palacio de hielo. Anna, con la ayuda de un valiente montañés llamado Kristoff, su reno Sven y un divertido muñeco de nieve llamado Olaf, emprende una aventura épica para encontrar a Elsa y salvar el reino del invierno perpetuo, redescubriendo el vínculo especial que las une como hermanas.",
         duración: "1h 42m",
         poster: "./images/Frozen.jpg",
@@ -30,7 +30,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "El Maravilloso Mundo de Gumball",
-        genero: "Caricatura",
+        genero: "Caricaturas",
         sinopsis: "Las aventuras de Gumball, un gato azul, junto con su familia en la ciudad de elmore",
         temporadas: 6,
         duración: "24 min",
@@ -67,7 +67,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "El Secreto De Sus Ojos",
-        genero: "Misterio",
+        genero: "Suspenso",
         sinopsis: "Un juez tiene dudas acerca de los planes de un oficial de justicia recientemente retirado que intenta descubrir al culpable de la violación y el asesinato de una joven, crimen ocurrido varias décadas atrás.",
         duración: "2h 9m",
         poster: "./images/ESEDSO.jpg",
@@ -76,7 +76,7 @@ const PELICULAS_Y_SERIES =
 
     {
         título: "Crepusculo",
-        genero: "Sobrenatural",
+        genero: "Romance",
         sinopsis: "Bella Swan se va a vivir con su padre al pequeño pueblo de Forks, donde conoce a Edward, un atractivo y misterioso chico del que se enamora y quien esconde un gran secreto: es un vampiro. Pero la familia del chico guarda una peculiaridad, y es que no se alimenta de sangre humana.",
         duración: "2h 2m",
         poster: "./images/Crepusculo.jpg",

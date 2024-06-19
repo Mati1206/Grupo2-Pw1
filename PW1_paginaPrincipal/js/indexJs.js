@@ -42,7 +42,16 @@ function buscarPorNombre(){
     })
 }
 
+function filtrarGeneros() {
+    const nodo_genero = document.getElementById('generos')
+    nodo_genero.addEventListener('change', (event) => {
+        let result = event.target.value
+        const arrayGender = PELICULAS_Y_SERIES.filter(item => item.genero.toLowerCase() === result.toLowerCase())
+        actualizarCatalogo(arrayGender)
+    })
+}
 
+filtrarGeneros()
 buscarPorNombre()
 mostrarSeries()
 mostrarPeliculas()
