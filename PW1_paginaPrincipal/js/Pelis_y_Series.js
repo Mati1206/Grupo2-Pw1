@@ -245,4 +245,3 @@ function filtrarSeries(){
     return series
 }
 
-localStorage.setItem('catalogo', JSON.stringify(PELICULAS_Y_SERIES))
