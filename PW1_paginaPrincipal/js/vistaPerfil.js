@@ -1,4 +1,3 @@
-
 const form = document.getElementById("form");
 const contraseña = document.getElementById("nuevaContraseña");
 const repetirContraseña = document.getElementById("repetirContraseña");
@@ -12,7 +11,6 @@ function verificarContraseñaCorrecta() {
     let errorRepetir = '';
     let esValido = true;
 
-    
     errorRepetirContraseña.innerHTML = '';
     mensaje.innerHTML = '';
     mensajeCorrecto.innerHTML = '';
@@ -29,7 +27,7 @@ function verificarContraseñaCorrecta() {
 
     if (esValido) {
         mensajeCorrecto.innerHTML = 'La contraseña es correcta';
-        botonGuardar.disabled = false;
+        verificarDatos();
     } else {
         errorRepetirContraseña.innerHTML = errorRepetir;
         mensaje.innerHTML = error;
@@ -37,15 +35,60 @@ function verificarContraseñaCorrecta() {
     }
 }
 
+function verificarDatosDePago() {
+    const numeroTarjeta = document.getElementById('numeroTarjeta').value;
+    const codigoTarjeta = document.getElementById('codigoTarjeta').value;
+    const metodoDePagoSeleccionado = document.querySelector('input[name="pago"]:checked').value;
+    let esValido = true;
+
+    const errorTarjeta = document.getElementById('errorTarjeta');
+    const errorCodigo = document.getElementById('errorCodigo');
+
+    errorTarjeta.textContent = '';
+    errorCodigo.textContent = '';
+
+    if (metodoDePagoSeleccionado === 'TajetaCredito') {
+        if (numeroTarjeta.length < 16 || numeroTarjeta.length > 19 || !/^\d+$/.test(numeroTarjeta)) {
+            errorTarjeta.textContent = 'El número de tarjeta debe tener entre 16 y 19 dígitos.';
+            errorTarjeta.style.color = 'red';
+            esValido = false;
+        }
+        if (codigoTarjeta.length !== 3 || !/^\d+$/.test(codigoTarjeta) || /0/.test(codigoTarjeta)) {
+            errorCodigo.textContent = 'El código de seguridad debe tener exactamente 3 dígitos distintos de cero.';
+            errorCodigo.style.color = 'red';
+            esValido = false;
+        }
+    }
+
+    return esValido;
+}
+
+function verificarDatos() {
+    const esContraseñaValida = contraseña.value === repetirContraseña.value && esContraseñaCompleja(contraseña.value);
+    const sonDatosDePagoValidos = verificarDatosDePago();
+
+    if (esContraseñaValida && sonDatosDePagoValidos) {
+        botonGuardar.disabled = false;
+    } else {
+        botonGuardar.disabled = true;
+    }
+}
 
 contraseña.addEventListener('input', verificarContraseñaCorrecta);
 repetirContraseña.addEventListener('input', verificarContraseñaCorrecta);
+document.getElementById('numeroTarjeta').addEventListener('input', verificarDatos);
+document.getElementById('codigoTarjeta').addEventListener('input', verificarDatos);
+document.querySelectorAll('input[name="pago"]').forEach(function (radio) {
+    radio.addEventListener('change', verificarDatos);
+});
+document.querySelectorAll('.checkboxCuponPago input[type="checkbox"]').forEach(function (checkbox) {
+    checkbox.addEventListener('change', verificarDatos);
+});
 
 form.addEventListener("submit", e => {
     e.preventDefault();
-
     if (!botonGuardar.disabled) {
-   
+        guardarDatos();
         console.log('Formulario enviado');
     }
 });
@@ -58,93 +101,46 @@ function esContraseñaCompleja(contraseña) {
     return letras && letras.length >= 2 && numeros && numeros.length >= 2 && especiales && especiales.length >= 2;
 }
 
-verificarContraseñaCorrecta();
-
-
-
-
 function limpiarMensajeError() {
     const errorCupon = document.getElementById('errorCupon');
     errorCupon.textContent = '';
 }
 
-document.getElementById('numeroTarjeta').addEventListener('input', function (e) {
-    const tarjeta = e.target.value;
-    const errorMensaje = document.getElementById('errorTarjeta');
-    const numerosTarjeta = tarjeta.replace(/\D/g, '');
+function guardarDatos() {
+    const metodoDePagoSeleccionado = document.querySelector('input[name="pago"]:checked').value;
+    const numeroTarjeta = document.getElementById('numeroTarjeta').value;
+    const codigoTarjeta = document.getElementById('codigoTarjeta').value;
 
-    if (numerosTarjeta.length < 16 || numerosTarjeta.length > 19) {
-        errorMensaje.textContent = 'El número de tarjeta debe tener entre 16 y 19 dígitos.';
-        errorMensaje.style.color = 'red';
-    } else {
-        errorMensaje.textContent = '';
-    }
-
-    if (numerosTarjeta.length >= 16) {
-        const sumOfDigits = numerosTarjeta.slice(0, -1).split('').reduce((acc, curr) => acc + parseInt(curr), 0);
-        const lastDigit = parseInt(numerosTarjeta.slice(-1));
-        if (sumOfDigits % 2 === 0 && lastDigit % 2 === 0) {
-            errorMensaje.textContent = 'El último dígito debe ser impar si la suma de los números anteriores es par.';
-            errorMensaje.style.color = 'red';
-        } else {
-            errorMensaje.textContent = '';
+    const datos = {
+        nuevaContraseña: contraseña.value,
+        metodoDePago: {
+            metodo: metodoDePagoSeleccionado,
+            numeroTarjeta: metodoDePagoSeleccionado === 'TajetaCredito' ? numeroTarjeta : '',
+            codigoTarjeta: metodoDePagoSeleccionado === 'TajetaCredito' ? codigoTarjeta : ''
         }
-    }
+    };
 
-    e.target.value = numerosTarjeta;
-});
+    localStorage.setItem('datosUsuario', JSON.stringify(datos));
+    mensajeCorrecto.innerHTML = 'Datos guardados correctamente';
+}
 
-document.getElementById('codigoTarjeta').addEventListener('input', function (e) {
-    const codigo = e.target.value;
-    const errorCodigo = document.getElementById('errorCodigo');
 
-    const numerosCodigo = codigo.replace(/\D/g, '');
-
-    if (numerosCodigo.length !== 3 || /0/.test(numerosCodigo)) {
-        errorCodigo.textContent = 'El código de seguridad debe tener exactamente 3 dígitos distintos de cero.';
-        errorCodigo.style.color = 'red';
-    } else {
-        errorCodigo.textContent = '';
-    }
-
-    e.target.value = numerosCodigo;
-});
-
-document.getElementById('cuponPago').addEventListener('change', function () {
-    const errorCupon = document.getElementById('errorCupon');
-    if (this.checked) {
-        const pagoFacilChecked = document.getElementById('pagoFacil').checked;
-        const rapiPagoChecked = document.getElementById('rapiPago').checked;
-
-        if (!pagoFacilChecked && !rapiPagoChecked) {
-            errorCupon.textContent = 'Debe seleccionar al menos un tipo de cupón.';
-            errorCupon.style.color = 'red';
-        } else {
-            errorCupon.textContent = '';
+document.addEventListener('DOMContentLoaded', function() {
+    const metodoDePago = JSON.parse(localStorage.getItem('metodoDePago'));
+    if (metodoDePago) {
+        document.querySelector(`input[name="pago"][value="${metodoDePago.metodo}"]`).checked = true;
+        if (metodoDePago.metodo === 'TajetaCredito') {
+            document.getElementById('numeroTarjeta').value = metodoDePago.numeroTarjeta;
+            document.getElementById('codigoTarjeta').value = metodoDePago.codigoTarjeta;
         }
     }
 });
 
-document.querySelectorAll('.checkboxCuponPago input[type="checkbox"]').forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-        const cuponPagoChecked = document.getElementById('cuponPago').checked;
-        const errorCupon = document.getElementById('errorCupon');
-        const pagoFacilChecked = document.getElementById('pagoFacil').checked;
-        const rapiPagoChecked = document.getElementById('rapiPago').checked;
+document.addEventListener('DOMContentLoaded', function() {
+    const nombreUsuarioElemento = document.querySelector('.nombreUsuario');
+    const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
 
-        if (cuponPagoChecked && (!pagoFacilChecked && !rapiPagoChecked)) {
-            errorCupon.textContent = 'Debe seleccionar al menos un tipo de cupón.';
-            errorCupon.style.color = 'red';
-        } else {
-            errorCupon.textContent = '';
-        }
-    });
-});
-
-document.querySelectorAll('input[name="pago"]').forEach(function (radio) {
-    radio.addEventListener('change', function () {
-        if (this.id !== 'cuponPago') {
-            limpiarMensajeError();
-        }
-    });
+    if (usuarioLogueado && usuarioLogueado.usuario) {
+        nombreUsuarioElemento.textContent = usuarioLogueado.usuario;
+    }
 });

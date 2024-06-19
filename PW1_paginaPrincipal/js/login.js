@@ -7,7 +7,7 @@ document.getElementById('campo').addEventListener('submit', function(event) {
     const usuarioEncontrado = usuarios.find(buscador => buscador.usuario === usuario && buscador.contraseña === contraseña);
 
     if (usuarioEncontrado) {
-      
+        localStorage.setItem('usuarioLogueado', JSON.stringify(usuarioEncontrado));
         error.textContent=""
         window.location.href = 'index.html';
     } else {

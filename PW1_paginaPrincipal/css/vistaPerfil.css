@@ -134,7 +134,8 @@
 }
 
 .nombreUsuario {
-    margin-left: 1.5em;
+
+    text-align: center;
     padding: 2em;
 }
 
