@@ -1,6 +1,7 @@
 
 actualizarCatalogo(PELICULAS_Y_SERIES)
 
+
 function mostrarPeliculasYSeries(){
     let catalogo_comlpeto
     const nodo_catalogoCompleto = document.querySelector('.home')
@@ -30,6 +31,8 @@ function mostrarSeries(){
         actualizarCatalogo(catalogo_series)
     })
 }
+
+
 
 
 mostrarSeries()

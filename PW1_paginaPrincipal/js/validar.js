@@ -14,15 +14,14 @@ const error2=document.getElementById('error2')
 const especial=document.getElementById('especial')
 const boton=document.getElementById('confirmar')
 
-nombre.addEventListener("blur",function(){ 
-    this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
-    if (this.value==""){ 
-        errores.innerHTML="El nombre solo puede contener letras"
-    }else { 
-        errores.innerHTML=""
+nombre.addEventListener("blur", function () {
+    this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g, '');
+    if (this.value === "") {
+        errores.innerHTML = "El nombre solo puede contener letras";
+    } else {
+        errores.innerHTML = "";
     }
-    return nombre.value
-});
+})
 
 
 
@@ -44,21 +43,21 @@ usuario.addEventListener("blur",function(){
         especial.innerHTML=""
     }
 }) 
-/*const suma={
+const suma={
     item:[],
     total:0
-}*/
+}
 tarjeta.addEventListener("input",function(){ 
     const error= document.getElementById('errort')
     
     this.value=this.value.replace(/[^0123456789\s]/g,'')
-    /*s= { 
+    s= { 
         'num': parseFloat(tarjeta.value)
-    }*/
+    }
     if(this.value.length>=16 && this.value.length<=19){ 
-        /*suma['total']+= tarjeta.value*/
+        suma['total']+= tarjeta.value
         error.innerHTML=""
-        /*console.log(suma)*/
+        console.log(suma)
     }else { 
         error.innerHTML="Tiene que contar como minimo 16 caracteres y como maximo 19"
     }
@@ -142,4 +141,12 @@ if (validar.test(campo.value)){
     }
 
 
-    
+function limpiarNombreUsuario(){
+    const nodo_salir = document.getElementById('salir')
+    nodo_salir.addEventListener('click', (event) =>{
+        event.preventDefault()
+        localStorage.clear()
+    })
+}
+
+    limpiarNombreUsuario()
