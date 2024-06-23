@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Información Pelicula</title>
+        <link rel="stylesheet" href="css/flickity.min.css" media="screen">
+        <link rel="stylesheet" href="css/detalle.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://kit.fontawesome.com/b70bec9694.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <div class="black_buster">
+            <a class="black_buster" href="home.html">
+                <h1>Black Buster</h1>
+            </a>
+        </div>
+        <section class="menu">
+            <a href="./home.html"><button class="menu home" id="home"><i
+                        class="fa-solid fa-house"></i>Home</button></a>
+            <a href="./home.html"><button class="menu peliculas" id="peliculas"><i
+                        class="fa-solid fa-film"></i>Películas</button></a>
+            <a href="./home.html"><button class="menu series" id="series"><i
+                        class="fa-solid fa-film"></i>Series</button></a>
+            <a href="./vistaPerfil.html"><button class="menu perfil"><i
+                        class="fa-solid fa-user"></i>Perfil</button></a>
+            <a href="./login.html"><button class="menu cerrarSesion" id="cerrarSesion"><i
+                        class="fa-sharp fa-solid fa-door-open"></i>Salir</button></a>
+        </section>
+    </header>
+   <main>
+   
+    <section class="grid">
+        <article class="foto" id="contenedor">
+          
+
+        </article>
+
+        <article class="similares">
+            <h1>Similares</h1>
+    
+            <div class="carousel" data-flickity>
+
+                <div class="carousel-cell">
+                    <a href="./detalleSerieOPelicula.html"> <img class="carousel-cell__img "
+                            src="images/horaDeAventrura-carrousel.jpg" alt="">Hora de Aventura</a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="./detalleSerieOPelicula.html"> <img class="carousel-cell__img "
+                            src="images/fragmentado-carrousel.jpg" alt="Fragemtado"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="./detalleSerieOPelicula.html"><img class="carousel-cell__img"
+                            src="images/Gambito-de-Dama-carrousel.jpg" alt="Gambito de dama"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="./detalleSerieOPelicula.html"><img class="carousel-cell__img"
+                            src="images/fullmetalDetalle.jpg" alt="Fullmetal Alchemist"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="./detalleSerieOPelicula.html"><img class="carousel-cell__img"
+                            src="images/frozen-carrousel.jpg" alt="Frozen"></a>
+                </div>
+                <div class="carousel-cell">
+                    <a href="./detalleSerieOPelicula.html"><img class="carousel-cell__img"
+                            src="images/losSimpsonDetalle.jpg" alt="Los simpsons"></a>
+                </div>
+            </div>
+
+        </article>
+    </section>
+   </main>
+   
+   <script src="./js/Pelis_y_Series.js"></script>
+   <script src="./js/flickity.pkgd.min.js"></script>
+   <script src="./js/detallePeliculaOSerie.js"></script>
+</body>
+</html>

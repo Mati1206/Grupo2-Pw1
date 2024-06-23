@@ -15,7 +15,6 @@
         "similares similares";
 }
 
-
 .gridSimilares {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -72,6 +71,7 @@ transition: background-color 0.3s, color 0.3s;
 .gridSimilares:hover{
     cursor: pointer;
 }
+
 .menu:hover{
     cursor: pointer;
 }
@@ -85,22 +85,11 @@ transition: background-color 0.3s, color 0.3s;
     height: 100%;
 }
 
-@media screen and (max-width: 640px){
-
-    .grid {
+.detallePeliculaOSerie{
     display: flex;
-    flex-direction: column;
-    padding-top: 1em;
-    width: 80%;
+    flex-direction: row;
 }
 
-
-.gridSimilares {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    padding: 10px;
-}
-}
 
 
 .carousel {
@@ -122,3 +111,20 @@ transition: background-color 0.3s, color 0.3s;
     height: 100%;
     object-fit: cover;
   }
+
+@media screen and (max-width: 640px){
+
+    .grid {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    width: 80%;
+}
+
+
+.gridSimilares {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 10px;
+}
+}
