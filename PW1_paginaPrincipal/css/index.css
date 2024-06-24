@@ -1,258 +1,197 @@
-body{
-margin: 0;
-background-color: #111111f3;
-color: #ecf0f1a9;
-font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-style: normal;
+
+body {
+    margin: 0;
+    background-color: #111111f3;
+    color: #ecf0f1a9;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-.black_buster{
+
+.black_buster {
     color: #fff;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
-    
 }
-img{
+
+img {
     border: 3px solid black;
     border-radius: 2px;
-    
+    display: block;
+    margin: 0 auto; 
 }
-a{
-    color:#ecf0f1a9;
+
+a {
+    color: #ecf0f1a9;
     text-decoration: none;
-    
 }
-.menu{
+
+.menu {
     display: flex;
-    flex-direction: row;
-    align-content: center;
+    flex-wrap: wrap;
     justify-content: center;
-    width: calc(400%/4);
     background-color: #080808;
 }
-.home,.peliculas,.series,.perfil,.cerrarSesion{
+
+.menu button {
     padding: 13px 95px;
     font-size: 20px;
-    color:#ecf0f1a9;
+    color: #ecf0f1a9;
 }
 
-
-.navegadorYGeneros{
+.navegadorYGeneros {
     display: flex;
-    flex-direction: row;
-    width: calc(200%/2);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
 }
 
-.navegador{
-    margin-top: 30px;
-    margin-left: 40px;
+.navegador {
+    margin: 10px;
 }
-.generos{
-    margin-top: 60px;
+
+.generos {
+    margin: 10px;
 }
-.barraNav{
+
+.barraNav, .gender {
     padding: 10px 20px;
-    width: 300px;
-    margin-right: 5px;
+    width: 100%;
+    max-width: 300px;
     background-color: #080808;
     border: solid 2px #727272;
     color: #ecf0f1a9;
 }
-.botonBuscar{
-        padding: 10px 20px;
-        background-color: #d31818cc;
-        border: solid 1px #d31818cc;
-        color: #fff;
-        font-size: 15px;
-        border-radius: 10px;
-        transition: background-color 0.3s, color 0.3s; 
-    
-        
-    }
-    
-    .botonBuscar:hover{
-       background-color: grey;
-       color: #080808;
-       cursor: pointer;
-        
-    }
- 
-    .menu:hover{
-        cursor: pointer;
-    }
 
-.gender{
+.botonBuscar {
     padding: 10px 20px;
-    width: 300px;
-    margin-right: 5px;
-    background-color: #080808;
-    border: solid 2px #727272;
-    color: #ecf0f1a9;
+    background-color: #d31818cc;
+    border: solid 1px #d31818cc;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
-.fuenteG{
+
+.botonBuscar:hover {
+    background-color: grey;
+    color: #080808;
+    cursor: pointer;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.fuenteG {
     font-size: 22px;
-    color:#ecf0f1a9;
-    padding: 10px 20px;
-    width: 300px;
-    margin-right: 5px;
+    color: #ecf0f1a9;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.peliculasYSeries{
+
+.peliculasYSeries {
     display: flex;
     flex-direction: column;
-    margin-top: 55px;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin: 20px 50px;
 }
 
-.linea{
+.linea {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
 }
 
-.fa-magnifying-glass{
+.fa-magnifying-glass {
     font-size: 25px;
 }
 
-.fa-magnifying-glass:hover{
+.fa-magnifying-glass:hover {
     cursor: pointer;
 }
 
-.fa-user,.fa-door-open, .fa-film, .fa-house{
+.fa-user, .fa-door-open, .fa-film, .fa-house {
     color: #d31818cc;
 }
 
-@media screen and ( min-width: 600px) and (max-width: 900px){
-     .menu{
-        width: 100%;
-        position: static;
-      }
 
-      .home,.peliculas,.series,.perfil{
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .menu button {
         padding: 10px 48px;
-      }
+    }
 
-      .navegadorYGeneros{
-        width: 100%;
+    .navegadorYGeneros {
         flex-direction: column;
-      }
+        align-items: center;
+    }
 
-       
-      .fuenteG{
-        display: none;
-      }
+    .barraNav, .gender {
+        width: 80%;
+    }
 
-      .barraNav{
-        position: static;
-        width: 35%;
-        margin-left: 20px;
-      }
+    .peliculasYSeries {
+        margin: 20px;
+    }
 
-      .gender{
-        position: static;
-        width: 40%;
-        margin-left: 90px;
-      }
+    .linea {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        justify-content: center;
+    }
 
-      .gender,.barraNav,.botonBuscar{
-        position: static;
-        padding: 20px;
-      }
-
-      .peliculasYSeries{
-        flex-direction: column;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        margin-right: 0;
-      }
-      
-      .linea{
+    .linea img {
         width: 100%;
     }
 }
 
-@media screen and (width <481px){
-    
-    .peliculasYSeries{ 
-        display: grid;
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        justify-items: center;
-    }
-    .linea{
-      
-        display: flex;
-        flex-direction: column;
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-   /* .lineaA.lineaB{ 
-        
-        display: flex;
-        flex-direction: column;
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
-    .lineaA.lineaA.lineaC{
-       
-        display: flex;
-        flex-direction: column;
-        grid-row: 3/4;
-        grid-column: 1/2;
-    }
-    .lineaA.lineaA.lineaD{
-       
-        display: flex;
-        flex-direction: column;
-        grid-row: 4/5;
-        grid-column: 1/2;
-    }*/
-    h1{
-        text-align: center;
-    }
-    .botonBuscar {
-        position: relative;
-        left: 30%;
-        margin: 20px;
-        bottom: 20%;
-        padding: 10px 20px;
-        background-color: #d31818cc;
-        border: solid 1px #d31818cc;
-        color: #fff;
-        font-size: 15px;
-        border-radius: 10px;
-        transition: background-color 0.3s, color 0.3s;
-    }
-    .menu { 
-        display: grid;
+
+@media screen and (max-width: 600px) {
+    .menu {
         flex-direction: column;
     }
-    .navegadorYGeneros{
-        display: grid;
+
+    .menu button {
         width: 100%;
-        text-align: start;
-    }
-    .fa-solid.fa-magnifying-glass{
-        display: none;
-    }
-    .barraNav{
-        width: 200px;
-    }
-    .navegadorYGeneros, .generos{
-    
-        display: flex;
-        justify-content: center;
+        padding: 10px;
         text-align: center;
     }
-    .gender{
-        width: 220px;
+
+    .navegadorYGeneros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barraNav, .gender {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .peliculasYSeries {
+        margin: 10px;
+    }
+
+    .linea {
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .botonBuscar {
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .linea {
+        justify-content: center;
     }
 }

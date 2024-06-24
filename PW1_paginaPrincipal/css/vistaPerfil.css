@@ -1,23 +1,25 @@
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+/* Base styles */
 .black_buster {
     color: #fff;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
-
 }
 
 .gridPrincipal {
     display: grid;
     grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 30em;
+    grid-template-rows: auto;
     grid-template-areas: "usuario datos metodoPago";
-
+    gap: 1em;
 }
 
 .usuario {
@@ -26,32 +28,27 @@
 
 .datos {
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, auto);
     grid-area: datos;
-    grid-template-areas: "email email"
-        "contraseñaUsuario ";
+    gap: 1em;
 }
 
 .metodoPago {
     display: grid;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: repeat(3, auto);
     grid-area: metodoPago;
     justify-content: center;
-
+    gap: 1em;
 }
 
 .infoUsuario {
-
-    padding: 2em;
+    padding: 1em;
 }
-
 
 .xxx {
     width: 2em;
 }
-
-
 
 .metodosDePago {
     padding: 2em;
@@ -60,8 +57,7 @@
 
 .cuponDePago {
     display: grid;
-    grid-template-rows: 50% 50%;
-
+    grid-template-rows: 1fr 1fr;
 }
 
 .inputNumeroyCodigo {
@@ -69,22 +65,30 @@
 }
 
 .radioCuponPago {
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 .inputNuevayRepetirContraseña {
     padding: 1em;
 }
 
-
-.botonGuardarCambios {
+.botonGuardarCambios, .botonCancelarSubcripcion {
     padding: 10px 20px;
-    background-color: #d31818cc;
-    border: solid 1px #d31818cc;
-    color: #fff;
     font-size: 15px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: 1em;
+    width: auto; 
+    max-width: 100%; 
+    margin-bottom: 1em; 
+    display: inline-block; 
+    text-align: center; 
+}
+
+.botonGuardarCambios {
+    background-color: #d31818cc;
+    border: solid 1px #d31818cc;
+    color: #fff;
 }
 
 .botonGuardarCambios:hover {
@@ -93,38 +97,26 @@
     cursor: pointer;
 }
 
+.botonCancelarSubcripcion {
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    color: #080808;
+}
+
 .botonCancelarSubcripcion:hover {
     background-color: grey;
     color: #ffffff;
     cursor: pointer;
 }
 
-.botonCancelarSubcripcion {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: solid 1px #ffffff;
-    color: #080808;
-    font-size: 15px;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
 .botones {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 5em;
-}
-
-
-.botonGuardarCambios {
-    padding: 10px 20px;
- 
-    margin-top: 5em;
+    gap: 1em;
 }
 
 .iconoUsuario {
-    font-size: 10em
+    font-size: 10em;
 }
 
 .divIconoUsuario {
@@ -134,47 +126,37 @@
 }
 
 .nombreUsuario {
-
     text-align: center;
     padding: 2em;
 }
 
+
 @media screen and (max-width: 640px) {
-
-.nombreUsuario{
-    text-align: center;
-}
-
     .gridPrincipal {
         display: flex;
         flex-direction: column;
     }
 
-    .inputNuevaContraseña,
-    .inputRepetirContraseña {
+    .inputNuevaContraseña, .inputRepetirContraseña {
         display: flex;
         flex-direction: column;
-        position: relative
     }
 
     .metodoPago {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        position: relative
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
     }
 
     .metodosDePago {
         padding: 2em;
-        padding-left: 2em;
-        position: relative
     }
 
     .cuponDePago {
         display: flex;
         flex-direction: column;
-        position: relative
     }
 
    .botonGuardarCambios{
@@ -186,35 +168,82 @@
    }
 }
 
+@media screen and (min-width: 641px) and (max-width: 900px) {
+    .gridPrincipal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "usuario datos"
+            "metodoPago metodoPago";
+    }
 
+    .datos {
+        grid-template-columns: 1fr;
+    }
 
+    .metodoPago {
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .barraNav, .gender, .botonBuscar {
+        display: inline-block;
+        margin: 0 1em;
+    }
+
+    .botonBuscar {
+        margin-left: auto;
+    }
+
+    .navegadorYGeneros {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: flex-end; 
+        gap: 1em;
+        flex-direction: row; 
+    }
+
+    .botonGuardarCambios, .botonCancelarSubcripcion {
+        width: auto; 
+        max-width: none; 
+        margin-top: 1em;
+        margin-left: 1em; 
+    }
+}
+
+/* Messages */
 .mensaje {
     width: 20em;
     color: red;
-margin-top: -2em;
-margin-left: 2em;
+    margin-top: -2em;
+    margin-left: 2em;
 }
 
 .mensajeRepetir {
     text-align: center;
     margin-top: -2em;
     margin-right: 6em;
-    color:red;
-
+    color: red;
 }
 
 .mensajeTarjeta {
     color: yellow;
-
 }
-
 
 .mensajeCorrecto {
     margin-left: 2em;
     color: green;
 }
 
-.mensajeCupon{
+.mensajeCupon {
     position: absolute;
     bottom: 13em;
 }
