@@ -185,7 +185,7 @@ const PELICULAS_Y_SERIES =
         duración: "42 min",
         poster: "./images/GossipGirls.jpg",
         categoria: 2,
-        video: "https://www.youtube.com/embed/XhsV1gPVJMQ?si=V85rAOKlw5pwcAtW"
+        video: "https://www.youtube.com/embed/OQ6fQJs_yt0?si=lTu2V0nCb3byHdPI"
     },
 
     {

@@ -39,7 +39,7 @@ function generarDetalleSeriePelicula(item) {
   return `
       <article class="trailerYCaracteristicas">
           <div class="imagen">
-              <iframe width="450em" height="250em"
+              <iframe width="500em" height="270em"
                   src="${item.video}"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -52,10 +52,10 @@ function generarDetalleSeriePelicula(item) {
           </div>
       </article>
       <article class="descripcion">
-          <h2>${item.título}</h2>
-          <p><strong>Género:</strong> ${item.genero}</p>
-          <p><strong>Duración:</strong> ${item.duración}</p>
-          <p><strong>Sinopsis:</strong> ${item.sinopsis}</p>
+          <h2 class="titulo">${item.título}</h2>
+          <p class="genero"><strong>Género:</strong> ${item.genero}</p>
+          <p class="duracion"><strong>Duración:</strong> ${item.duración}</p>
+          <p class="sinopsis"><strong>Sinopsis:</strong> ${item.sinopsis}</p>
       </article>
   `
 }

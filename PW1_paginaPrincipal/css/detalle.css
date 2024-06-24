@@ -1,3 +1,4 @@
+
 .black_buster{
     color: #fff;
     font-family: "Russo One", sans-serif;
@@ -27,7 +28,23 @@
 }
 
 .descripcion{
-    padding: 2% 5%;
+   display: flex;
+   flex-direction: column;
+   margin-left: 7%;
+}
+
+.sinopsis{
+ width: 780px;
+}
+
+.sinopsis,.genero,.duracion{
+    font-size: 17px;
+}
+
+.titulo{
+    font-size: 30px;
+    font-family: "Russo One", sans-serif;
+    letter-spacing: 0.1em;
 }
 
 .similares {
