@@ -37,9 +37,9 @@ const item = PELICULAS_Y_SERIES[id]
 
 function generarDetalleSeriePelicula(item) {
   return `
-      <article class="foto">
+      <article class="trailerYCaracteristicas">
           <div class="imagen">
-              <iframe width="400em" height="250em"
+              <iframe width="450em" height="250em"
                   src="${item.video}"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

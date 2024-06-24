@@ -21,14 +21,13 @@
     padding: 10px;
 }
 
-
 .foto {
-    grid-area: foto;
+   display: flex;
+   flex-direction: row;
 }
 
-.descripcion {
-    grid-area: descr;
-    padding-left: 2em;
+.descripcion{
+    padding: 2% 5%;
 }
 
 .similares {
@@ -41,15 +40,14 @@
 }
 
 .imagen{
-height: 80%;
+  height: 80%;
 }
 
 .boton{
 display: flex;
 justify-content: center;
 align-items: center;
-
-
+margin-top: 6%;
 }
 
 .comenzar{
@@ -60,8 +58,12 @@ border: solid 1px #d31818cc;
 color: #fff;
 font-size: 15px;
 transition: background-color 0.3s, color 0.3s; 
-
 }
+
+.trailerYCaracteristicas{
+    margin-left: 6%;
+}
+
 .comenzar:hover{
     background-color: grey;
     color: #080808;
@@ -85,10 +87,6 @@ transition: background-color 0.3s, color 0.3s;
     height: 100%;
 }
 
-.detallePeliculaOSerie{
-    display: flex;
-    flex-direction: row;
-}
 
 
 
