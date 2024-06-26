@@ -1,152 +1,129 @@
+// validar.js
 
-const nombre= document.getElementById('nombre');
-const apellido= document.getElementById('apellido')
-const usuario=document.getElementById('usuario')
-const form=document.getElementById('registro')
-const contraseña= document.getElementById('contraseña')
-const confirmar_contraseña = document.getElementById('confirmar_contraseña')
-const nombre_titular=document.getElementById('nombre_titular')
-const tarjeta=document.getElementById('numero_tarjeta')
-const codigo= document.getElementById('codigo_seguridad')
-const mail =document.getElementById('email')
-const errores=document.getElementById('errores')
-const error2=document.getElementById('error2')
-const especial=document.getElementById('especial')
-const boton=document.getElementById('confirmar')
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById('registro');
+    const nombre = document.getElementById('nombre');
+    const apellido = document.getElementById('apellido');
+    const usuario = document.getElementById('usuario');
+    const contraseña = document.getElementById('contraseña');
+    const confirmar_contraseña = document.getElementById('confirmar_contraseña');
+    const email = document.getElementById('email');
+    const errores = document.getElementById('errores');
+    const error2 = document.getElementById('error2');
+    const especial = document.getElementById('especial');
+    const errorE = document.getElementById('errorE');
+    const errorc = document.getElementById('errorc');
+    const confirmar = document.getElementById('confirmar');
+    const cancelar = document.getElementById('cancelar');
 
-nombre.addEventListener("blur",function(nombre){ 
-    this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
-    if (nombre.value==""){ 
-        errores.innerHTML="El nombre solo puede contener letras"
-    }else { 
-        errores.innerHTML=""
-    }
-})
+    nombre.addEventListener("blur", function() {
+        this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
+        if (this.value === "") {
+            errores.innerHTML = "El nombre solo puede contener letras";
+        } else {
+            errores.innerHTML = "";
+        }
+    });
 
+    apellido.addEventListener("blur", function() {
+        this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
+        if (this.value === "") {
+            error2.innerHTML = "El apellido solo puede contener letras";
+        } else {
+            error2.innerHTML = "";
+        }
+    });
 
+    usuario.addEventListener("blur", function() {
+        this.value = this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]/g,'');
+        if (this.value === "") {
+            especial.innerHTML = "El usuario no puede tener caracteres especiales";
+        } else {
+            especial.innerHTML = "";
+        }
+    });
 
-apellido.addEventListener("blur",function(){ 
-    this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'');
-    if (this.value==""){ 
-        error2.innerHTML="El apellido solo puede contener letras"
-    }else { 
-        error2.innerHTML=""
-    }
-    return apellido.value
-});
+    email.addEventListener("blur", function() {
+        const validarEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        if (validarEmail.test(this.value)) {
+            errorE.innerHTML = "";
+        } else {
+            errorE.innerHTML = "El mail ingresado no es correcto";
+            this.value = "";
+        }
+    });
 
-usuario.addEventListener("blur",function(){ 
-    this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ0123456789\s]/g,'')
-    if (this.value==""){ 
-        especial.innerHTML="El usuario no puede tener caracteres especiales"
-    }else { 
-        especial.innerHTML=""
-    }
-}) 
-const suma={
-    item:[],
-    total:0
-}
-tarjeta.addEventListener("input",function(event){ 
-    const error= document.getElementById('errort')
-    
-    this.value=this.value.replace(/[^0123456789\s]/g,'')
-    s= { 
-        'num': parseFloat(tarjeta.value)
-    }
-    if(this.value.length>=16 && this.value.length<=19){ 
-        suma['total']+= tarjeta.value
-        error.innerHTML=""
-        console.log(suma)
-    }else { 
-        error.innerHTML="Tiene que contar como minimo 16 caracteres y como maximo 19"
-    }
-})
+    contraseña.addEventListener("blur", function() {
+        if (validarContrasena(this.value)) {
+            errorc.innerHTML = "";
+        } else {
+            errorc.innerHTML = "Contraseña inválida. Debe tener al menos 8 caracteres, incluyendo 2 letras, 2 números y 2 caracteres especiales.";
+        }
+    });
 
-nombre_titular.addEventListener("input",function(){ 
-    this.value=this.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ\s]/g,'')
-})
+    confirmar_contraseña.addEventListener("blur", function() {
+        if (contraseña.value !== this.value) {
+            errorc.innerHTML = "Las contraseñas no coinciden.";
+        } else {
+            errorc.innerHTML = "";
+        }
+    });
 
-codigo.addEventListener("blur",function(){ 
-    const error= document.getElementById('errorE')
-    this.value=this.value.replace(/[^0123456789\s]/g,'')
-  if(this.value[0]==0 && this.value[1]==0 && this.value[2]==0 ){ 
-    this.value= ""
-    error.innerHTML="Ingrese un numero distinto a 000" 
-  } else if(this.value.length<3) {
-    error.innerHTML="El codigo tiene que contar con 3 digitos"
-    this.value=""
-  } else { 
-    error.innerHTML=""
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
 
-  } })
+        // Validar todos los campos antes de continuar con el submit
+        const metodoPago = document.querySelector('input[name="metodo_pago"]:checked');
 
-mail.addEventListener("blur",function(event) { 
-    const error= document.getElementById('errorE')
-   campo= event.target; 
-   validar= /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
-if (validar.test(campo.value)){ 
-    error.innerHTML=""
-} else {
-    error.innerHTML="El mail ingresado no es correcto"
-    mail.value=""   
-} })
+        // Validar campos de tarjeta si es necesario
+        const tarjeta = document.getElementById('tarjeta');
+        const errorT = document.getElementById('errort');
 
-       form.addEventListener('submit', function (event) {
-        event.preventDefault(); 
-        const password = contraseña.value;
-        const confirmarPassword = confirmar_contraseña.value;
-        const errorc = document.getElementById('errorc');
+        if (metodoPago && metodoPago.value === 'tarjeta') {
+            const numeroTarjeta = document.getElementById('numero_tarjeta').value.trim();
+            if (numeroTarjeta.length !== 16 || /^0{3}/.test(numeroTarjeta)) {
+                errorT.innerHTML = "Número de tarjeta inválido.";
+                return;
+            } else {
+                errorT.innerHTML = "";
+            }
+        }
 
-        if (password !== confirmarPassword) {
-            errorc.textContent = 'Las contraseñas no coinciden.';
-            errorc.style.color = 'red';
+        // Asegúrate de que todos los campos estén completos
+        if (nombre.value === '' || apellido.value === '' || email.value === '' ||
+            usuario.value === '' || contraseña.value === '' || confirmar_contraseña.value === '' ||
+            (metodoPago && metodoPago.value === 'tarjeta' && !tarjeta.checked)) {
+            alert('Por favor complete todos los campos requeridos.');
             return;
         }
 
-        if (validarContrasena(password)) {
-            this.submit(); 
-            const USUARIO = {
-                nombreUsuario: usuario.value
-
-            }
-            
-            localStorage.setItem('Nombre de usuario', JSON.stringify(USUARIO))
-           
-         
-        } else {
-            errorc.textContent = 'Contraseña inválida. Debe tener al menos 8 caracteres, incluyendo 2 letras, 2 números y 2 caracteres especiales.';
-            errorc.style.color = 'red';
-        }
-     
+        this.submit();
     });
 
-    function validarContrasena(contrasena) {
-        const longitud = /^.{8,}$/;
-        const letras = /[a-zA-Z]/g;
-        const numeros = /\d/g;
-        const caract = /[!@#$%^&*(),.?":{}|<>]/g;
-        if (!longitud.test(contrasena)) {
-            return false;
-        }
-        const letra = contrasena.match(letras) ;
-        const num = contrasena.match(numeros) ;
-        const especi = contrasena.match(caract) ;
+    cancelar.addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+});
 
-        if (letra.length < 2 || num.length < 2 || especi.length < 2) {
-            return false;
-        }
+function validarContrasena(contrasena) {
+    const longitud = /^.{8,}$/;
+    const letras = /[a-zA-Z]/g;
+    const numeros = /[0-9]/g;
+    const caracteresEspeciales = /[!@#$%^&*()_+{}\[\]:;<>,.?~]/g;
 
-        return true;
+    if (!longitud.test(contrasena)) {
+        return false;
     }
 
+    const letrasEncontradas = contrasena.match(letras);
+    const numerosEncontrados = contrasena.match(numeros);
+    const especialesEncontrados = contrasena.match(caracteresEspeciales);
 
-function limpiarNombreUsuario(){
-    const nodo_salir = document.getElementById('salir')
-    nodo_salir.addEventListener('click', (event) =>{
-        event.preventDefault()
-        localStorage.clear()
-    })
+    if (!letrasEncontradas || letrasEncontradas.length < 2 ||
+        !numerosEncontrados || numerosEncontrados.length < 2 ||
+        !especialesEncontrados || especialesEncontrados.length < 2) {
+        return false;
+    }
+
+    return true;
 }
-
-    limpiarNombreUsuario()
