@@ -6,126 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/RegistroUsuario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <title>Registro nuevo usuario</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Registro de Nuevo Usuario</title>
 </head>
 
 <body>
     <main>
-    <header class="black_buster">
-        <a class="black_buster" href="index.html"> <h1>Black Buster</h1></a>
-    </header>
+        <header class="black_buster">
+            <a class="black_buster" href="index.html">
+                <h1>Black Buster</h1>
+            </a>
+        </header>
         <div class="header_pagina">
             <h2>Registro de Nuevo Usuario</h2>
         </div>
-       
-        <form class="form-registro" id="registro" action="index.html" method="get">
-            <section class="contenedor_general"> 
-                
-                <article class="datos-personales">
-                    <h3>Datos personales</h3> 
-                <br>             
-                    <label for="nombre">Nombre:
-                    <input id="nombre" type="text" name="nombre"  placeholder="Nombre" required></label>
-                    <p id="errores"></p>
-                    <label for="apellido">Apellido:
-                    <input id="apellido" type="text" name="apellido" placeholder="Apellido" required></label>
-                    <p id="error2"></p>
-                    <label for="email">Correo electrónico:
-                    <input id="email" type="email" name="email" placeholder="Correo Electrónico" required></label>
-                    
-                                    <label for="usuario">Nombre de usuario:
-                    <input id="usuario" type="text" name="usuario" placeholder="Nombre de Usuario" required></label>
-                    <p id="especial"></p>
-                    <label for="contraseña">Contraseña:
-                    <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required></label>
-                    <label for="confirmar_contraseña">Repetir Contraseña:
-                    <input id="confirmar_contraseña" type="password"
-                    name="confirmar_contraseña" placeholder="Repetir Contraseña" required></label>
-                   
-                </article>
-            <br>
 
-            <section class="metodos-pago">
-                <h3 >Método de pago</h3>
-                <br>
-                <!-- Tarjeta de Crédito -->
-                <article class="article_tarjeta">
-                    <label class="titulo" for="pago_tarjeta">
-                    <input type="radio" id="pago_tarjeta" name="metodo_pago" value="tarjeta">
-                    Tarjeta de Crédito</label>
-                    <div class="detalles-tarjeta">
-                        <div class="campo">
-                            <label for="numero_tarjeta">Número de Tarjeta:
-                            <input id="numero_tarjeta" minlength="16" maxlength="19" type="text" name="numero_tarjeta" 
-                            placeholder="Número de Tarjeta" ></label>
-                            
-                        </div>
-                        <div class="campo">
-                            <label for="nombre_titular">Nombre del Titular:
-                            <input id="nombre_titular"  type="text" name="nombre_titular" 
-                            placeholder="Nombre del Titular"></label>
-                        </div>
-                        <div class="campo_corto">
-                            <label for="mes_vencimiento">Vencimiento:
-                            <input id="mes_vencimiento" type="number"  name="mes_vencimiento" 
-                            placeholder="MM/AA"></label>
-                        </div>
-                        <div class="campo_mascorto">
-                            <label for="codigo_seguridad">Código de Seguridad:
-                            <input id="codigo_seguridad" maxlength="3" type="text" name="codigo_seguridad" 
-                            placeholder="CVC"></label>
-                            
-                        </div>
-                    </div>
+        <form class="form-registro" id="registro" action="index.html" method="get">
+            <section class="contenedor_general">
+
+                <article class="datos-personales">
+                    <h3>Datos personales</h3>
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
+                    <p id="errores"></p>
+                    <label for="apellido">Apellido:</label>
+                    <input id="apellido" type="text" name="apellido" placeholder="Apellido" required>
+                    <p id="error2"></p>
+                    <label for="email">Correo electrónico:</label>
+                    <input id="email" type="email" name="email" placeholder="Correo Electrónico" required>
+                    <p id="errorE"></p>
+                    <label for="usuario">Nombre de usuario:</label>
+                    <input id="usuario" type="text" name="usuario" placeholder="Nombre de Usuario" required>
+                    <p id="especial"></p>
+                    <label for="contraseña">Contraseña:</label>
+                    <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
+                    <label for="confirmar_contraseña">Repetir Contraseña:</label>
+                    <input id="confirmar_contraseña" type="password" name="confirmar_contraseña"
+                        placeholder="Repetir Contraseña" required>
+                    <p id="errorc"></p>
                 </article>
                 <br>
-                <!-- Cupón de Pago -->
-                <article class="article_cupon">
-                    <label class="titulo" for="cupon_pago">Cupón de Pago</label>
-                    <div class="detalles-cupon">
-                    <label for="pagofacil"><input type="radio" id="pagofacil" name="metodo_pago" value="pagofacil">
-                    PagoFácil</label>
-                    <label for="rapipago"><input type="radio" id="rapipago" name="metodo_pago" value="rapipago">
-                    Rapipago</label>
-                    </div>
-                </article>
-                <br>
-                <!-- Transferencia Bancaria -->
-                <article class="article_transferencia">
-                    <label class="titulo" for="pago_transferencia">
-                    <input type="radio" id="pago_transferencia" name="metodo_pago" value="transferencia">
-                    Transferencia Bancaria</label>
-                    <div class="detalles-transferencia">
-                        <p>CBU: 115000060200123456789 - Banco de la Plaza</p>
-                    </div>
-                </article>
+
+                <section class="metodos-pago">
+                    <h3>Método de pago</h3>
+                    <br>
+                    <!-- Tarjeta de Crédito -->
+                    <article class="article_tarjeta">
+                        <label class="titulo" for="pago_tarjeta">
+                            <input type="radio" id="pago_tarjeta" name="metodo_pago" value="tarjeta" required>
+                            Tarjeta de Crédito
+                        </label>
+                        <div class="detalles-tarjeta">
+                            <div class="campo">
+                                <label for="numero_tarjeta">Número de Tarjeta:</label>
+                                <input id="numero_tarjeta" minlength="16" maxlength="19" type="text"
+                                    name="numero_tarjeta" placeholder="Número de Tarjeta">
+                                <span id="errort"></span>
+                            </div>
+                            <div class="campo">
+                                <label for="nombre_titular">Nombre del Titular:</label>
+                                <input id="nombre_titular" type="text" name="nombre_titular"
+                                    placeholder="Nombre del Titular">
+                            </div>
+                            <div class="campo_corto">
+                                <label for="mes_vencimiento">Vencimiento:</label>
+                                <input id="mes_vencimiento" type="text" name="mes_vencimiento" placeholder="MM/AA">
+                            </div>
+                            <div class="campo_mascorto">
+                                <label for="codigo_seguridad">Código de Seguridad:</label>
+                                <input id="codigo_seguridad" maxlength="3" type="text" name="codigo_seguridad"
+                                    placeholder="CVC">
+                                <span id="errorE"></span>
+                            </div>
+                        </div>
+                    </article>
+                    <br>
+                    <!-- Cupón de Pago -->
+                    <article class="article_cupon">
+                        <label class="titulo" for="cupon_pago">Cupón de Pago</label>
+                        <div class="detalles-cupon">
+                            <label for="pagofacil">
+                                <input type="radio" id="pagofacil" name="metodo_pago" value="pagofacil" required>
+                                PagoFácil
+                            </label>
+                            <label for="rapipago">
+                                <input type="radio" id="rapipago" name="metodo_pago" value="rapipago" required>
+                                Rapipago
+                            </label>
+                        </div>
+                    </article>
+                    <br>
+                    <!-- Transferencia Bancaria -->
+                    <article class="article_transferencia">
+                        <label class="titulo" for="pago_transferencia">
+                            <input type="radio" id="pago_transferencia" name="metodo_pago" value="transferencia"
+                                required>
+                            Transferencia Bancaria
+                        </label>
+                        <div class="detalles-transferencia">
+                            <p>CBU: 115000060200123456789 - Banco de la Plaza</p>
+                        </div>
+                    </article>
+                </section>
+
             </section>
-        </section>
             <br>
             <section class="section_botones">
                 <div class="campo">
                     <button id="confirmar" class="boton_confirmar" type="submit">Confirmar</button>
-                    <button  id="cancelar" class="boton_cancelar" type="reset">Cancelar</button>
-                    
+                    <button id="cancelar" class="boton_cancelar" type="button">Cancelar</button>
                 </div>
-               
-                
-
             </section>
             <ul>
-                <li><p id="errorE"></p> </li>
-                <li><p id="errorc"></p></li>
-                <li><p id="errort"></p></li>
-            
-    </form>
-                <footer>
-               
-                </footer>
-<script src="./js/validar.js"></script>
-<script src="./js/usuario.js"></script>
+                <li><span id="errorE" style="color:red"></span></li>
+                <li><span id="errorc" style="color:red"></span></li>
+                <li><span id="errort" style="color:red"></span></li>
+            </ul>
+        </form>
+        <footer>
+            <div class="footer-content">
+                <p>Materia: Programación Web I (02-3900) </p>
+                <p>Docente: SPIZZIRRI, DAMIAN </p>
+                <p>Alumnos:</p>
+                <ul>
+                    <li>ARAGON, MATIAS GABRIEL /</li>
+                    <li>BARRIONUEVO, NICOLÁS EZEQUIEL /</li>
+                    <li>COLACE, MATEO /</li>
+                    <li>DEL BARRIO, JOAN VALENTIN</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
 
+    <script src="./js/validar.js"></script>
+    <script src="./js/usuario.js"></script>
 </body>
 
 </html>
