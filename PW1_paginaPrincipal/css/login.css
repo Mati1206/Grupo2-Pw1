@@ -245,3 +245,250 @@ p, a{
     }
 
 }
+ul
+li { 
+    list-style: none;
+}
+html, body { 
+
+
+
+    background-color: black;
+    color: aliceblue;
+}
+p, a{ 
+    color: aliceblue; 
+    text-decoration: none;
+}
+
+.black_buster{
+    color: #fff;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    
+}
+
+.banner{ 
+ width: 100%;
+ height: 350px;  
+ border-radius: 50px;
+ border: 3px solid ;
+}
+
+.contenedor { 
+    display: grid;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+  grid-template-columns: 25% 25% 50%; 
+  grid-template-rows: 20% 20% 20% 20% 10% 10% ;
+  position: relative;
+  left: 30%;
+  
+}
+.campo1 { 
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  justify-content: flex-end;
+  position: relative;
+  right: 20%;
+}
+.campo2{
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 2/3;
+    height: 2%;
+    position: relative;
+    top: 40%;
+    
+    
+}
+.usuario {
+   
+   border: 2px solid white;
+   border-radius: 8px;
+}
+.campo3 { 
+    display: grid;
+    justify-content: flex-end;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    position: relative;
+  right: 20%;
+
+}
+.campo4{
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 3/4;
+    height: 2%;
+    position: relative;
+    top: 25%;
+    
+}
+.contraseña { 
+    border: 2px solid white;
+   border-radius: 8px;
+}
+.campo5 { 
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/4;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    left: 60%;
+    
+}
+
+.boton { 
+    padding: 10px 20px;
+    background-color: #d31818cc;
+    border: solid 1px #d31818cc;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; 
+
+    
+}
+
+.boton:hover{
+   background-color: grey;
+   color: #080808;
+   cursor: pointer;
+    
+}
+.campo6 { 
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    justify-content: center;
+    
+}
+.campo7{ 
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 6/6;
+    justify-content: center;
+}
+    .campo6:hover,
+.campo7:hover{
+    text-decoration: underline;
+}
+
+.campo8{ 
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/1;
+    justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+   
+    .banner {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .black_buster {
+        width: 80%;
+    }
+    .form-login,
+    .contenedor {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .campo8{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        left: 20%;
+
+    }
+    .campo1 {
+        text-align: start;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative;
+
+       
+    }
+
+    .campo2 {
+        text-align: start;
+        grid-column: 1/2;
+        grid-row:2/3;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .campo3 {
+        grid-row: 1/2;
+        grid-row: 3/5;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .campo4 {
+        grid-column: 1/1;
+        grid-row: 3/5;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .campo5 {
+        grid-column: 1/2;
+        grid-row: 4/8;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        left: 10%;
+    }
+
+    .campo6 {
+        grid-column: 1/1;
+        grid-row: 5/8;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .campo7 {
+        grid-column: 1/1;
+        grid-row: 6/8;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    
+
+    }
+
+    li {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    h1 {
+        text-align: center;
+        justify-content: center;
+
+    }
+
+}
