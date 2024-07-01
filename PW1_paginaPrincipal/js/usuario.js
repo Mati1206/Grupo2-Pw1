@@ -1,11 +1,10 @@
-// usuario.js
+
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById('registro');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-
-        // Obtener los valores de los campos del formulario
+   
         const nombre = document.getElementById('nombre').value.trim();
         const apellido = document.getElementById('apellido').value.trim();
         const email = document.getElementById('email').value.trim();
@@ -13,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const contraseña = document.getElementById('contraseña').value.trim();
         const confirmarContraseña = document.getElementById('confirmar_contraseña').value.trim();
 
-        // Validar campos
         if (nombre === '') {
             alert('Por favor ingrese su nombre.');
             return;
@@ -45,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        // Guardar datos del usuario en localStorage
         const datosUsuario = {
             nombre: nombre,
             apellido: apellido,
@@ -58,13 +55,11 @@ document.addEventListener("DOMContentLoaded", function() {
         usuarios.push(datosUsuario);
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
-        // Reiniciar el formulario
         this.reset();
 
-        // Redireccionar a la página de login
         window.location.href = 'index.html';
     });
-    // Agregar evento click para el botón Cancelar
+
     const cancelarBtn = document.getElementById('cancelar');
     if (cancelarBtn) {
         cancelarBtn.addEventListener('click', function() {
@@ -77,7 +72,7 @@ function validarContrasena(contrasena) {
     const longitud = /^.{8,}$/;
     const letras = /[a-zA-Z]/g;
     const numeros = /[0-9]/g;
-    const caracteresEspeciales = /[!@#$%^&*()_+{}\[\]:;<>,.?~]/g;
+    const caracteresEspeciales = /[!@#$=%^&*()_+{}\[\]:;<>,.?~=]/g;
 
     if (!longitud.test(contrasena)) {
         return false;

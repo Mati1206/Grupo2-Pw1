@@ -1,5 +1,3 @@
-// validar.js
-
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById('registro');
     const nombre = document.getElementById('nombre');
@@ -72,10 +70,8 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // Validar todos los campos antes de continuar con el submit
         const metodoPago = document.querySelector('input[name="metodo_pago"]:checked');
 
-        // Validar campos de tarjeta si es necesario
         const tarjeta = document.getElementById('tarjeta');
         const errorT = document.getElementById('errort');
 
@@ -89,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        // Asegúrate de que todos los campos estén completos
         if (nombre.value === '' || apellido.value === '' || email.value === '' ||
             usuario.value === '' || contraseña.value === '' || confirmar_contraseña.value === '' ||
             (metodoPago && metodoPago.value === 'tarjeta' && !tarjeta.checked)) {
@@ -109,7 +104,7 @@ function validarContrasena(contrasena) {
     const longitud = /^.{8,}$/;
     const letras = /[a-zA-Z]/g;
     const numeros = /[0-9]/g;
-    const caracteresEspeciales = /[!@#$%^&*()_+{}\[\]:;<>,.?~]/g;
+    const caracteresEspeciales = /[!=@#$%^&*()_+{}\[\]:;<>,.?~=/]/g;
 
     if (!longitud.test(contrasena)) {
         return false;
