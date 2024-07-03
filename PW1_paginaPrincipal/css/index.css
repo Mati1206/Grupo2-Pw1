@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     background-color: #111111f3;
@@ -40,27 +39,43 @@ a {
     color: #ecf0f1a9;
 }
 
-.navegadorYGeneros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.menu:hover {
+    background-color: grey;
+    color: #080808;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.navegador {
-    margin: 10px;
+.navegadorYGeneros{
+    display: flex;
+    flex-direction: row;
 }
 
 .generos {
-    margin: 10px;
+   margin-top: 50px;
+   margin-left: 300px;
 }
+
+.navegador {
+    margin-left: 50px;
+    margin-top: 25px;
+} 
 
 .barraNav, .gender {
     padding: 10px 20px;
-    width: 100%;
+    width: 260px;
     max-width: 300px;
     background-color: #080808;
     border: solid 2px #727272;
     color: #ecf0f1a9;
+}
+.fuenteG {
+    font-size: 22px;
+    color: #ecf0f1a9;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 10px;
 }
 
 .botonBuscar {
@@ -71,24 +86,13 @@ a {
     font-size: 15px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
+    margin-left: 5px;
 }
 
 .botonBuscar:hover {
     background-color: grey;
     color: #080808;
     cursor: pointer;
-}
-
-.menu:hover {
-    cursor: pointer;
-}
-
-.fuenteG {
-    font-size: 22px;
-    color: #ecf0f1a9;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .peliculasYSeries {
@@ -151,42 +155,11 @@ footer {
     margin-right: 0;
 }
 
-
-@media screen and (min-width: 600px) and (max-width: 900px) {
-    .menu button {
-        padding: 10px 48px;
-    }
-
-    .navegadorYGeneros {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .barraNav, .gender {
-        width: 80%;
-    }
-
-    .peliculasYSeries {
-        margin: 20px;
-    }
-
-    .linea {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .linea img {
-        width: 100%;
-    }
-}
-
-
 @media screen and (max-width: 600px) {
     .menu {
         flex-direction: column;
+        background-color: #080808;
+        text-align: center;
     }
 
     .menu button {
@@ -200,9 +173,21 @@ footer {
         align-items: center;
     }
 
-    .barraNav, .gender {
-        width: 100%;
-        margin: 10px 0;
+    .navegador {
+        margin-right: 10px;
+    }
+
+    .generos{
+        margin-left: 100px;
+    }
+
+     .gender {
+        width: 500px;
+        margin: 10px;
+    }
+
+    .barraNav {
+       margin-right: 10px;
     }
 
     .peliculasYSeries {
@@ -228,243 +213,47 @@ footer {
         justify-content: center;
     }
 }
-/*body {
-    margin: 0;
-    background-color: #111111f3;
-    color: #ecf0f1a9;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.black_buster {
-    color: #fff;
-    font-family: "Russo One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 2px;
-}
-
-img {
-    border: 3px solid black;
-    border-radius: 2px;
-    display: block;
-    margin: 0 auto;
-}
-
-a {
-    color: #ecf0f1a9;
-    text-decoration: none;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #080808;
-}
-
-.menu button {
-    padding: 13px 95px;
-    font-size: 20px;
-    color: #ecf0f1a9;
-}
-
-.navegadorYGeneros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
-}
-
-.navegador {
-    margin: 10px;
-}
-
-.generos {
-    margin: 10px;
-}
-
-.barraNav,
-.gender {
-    padding: 10px 20px;
-    width: 100%;
-    max-width: 300px;
-    background-color: #080808;
-    border: solid 2px #727272;
-    color: #ecf0f1a9;
-}
-
-.botonBuscar {
-    padding: 10px 20px;
-    background-color: #d31818cc;
-    border: solid 1px #d31818cc;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.botonBuscar:hover {
-    background-color: grey;
-    color: #080808;
-    cursor: pointer;
-}
-
-.menu:hover {
-    cursor: pointer;
-}
-
-.fuenteG {
-    font-size: 22px;
-    color: #ecf0f1a9;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.peliculasYSeries {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 50px;
-}
-
-.linea {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.fa-magnifying-glass {
-    font-size: 25px;
-}
-
-.fa-magnifying-glass:hover {
-    cursor: pointer;
-}
-
-.fa-user,
-.fa-door-open,
-.fa-film,
-.fa-house {
-    color: #d31818cc;
-}
-
-footer {
-    background-color: #080808;
-    color: #ecf0f1a9;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    width: 100%;
-    clear: both;
-}
-
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 14px;
-}
-
-.footer-content p {
-    margin-bottom: 8px;
-}
-
-.footer-content ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-.footer-content ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.footer-content ul li:last-child {
-    margin-right: 0;
-}
-
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
     .menu button {
         padding: 10px 48px;
     }
+    
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        background-color: #080808;
+    }
 
     .navegadorYGeneros {
         flex-direction: column;
-        align-items: center;
+        align-items: baseline;
+        margin-right: 30px;
     }
 
-    .barraNav,
+    .navegador {
+        margin-right: 30px;
+     }
+
+     .botonBuscar {
+        margin-right: 10px;
+     }
+
+    .barraNav{
+        width: 40%;
+    }
+
     .gender {
-        width: 80%;
+        width: 200px;
     }
 
     .peliculasYSeries {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .linea {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 15fr);
         grid-template-rows: repeat(2, auto);
-        gap: 10px;
-        justify-content: center;
     }
 
     .linea img {
         width: 100%;
     }
 }
-
-
-@media screen and (max-width: 600px) {
-    .menu {
-        flex-direction: row;
-        display: contents;
-        flex-wrap: nowrap;
-        justify-content: center;
-        background-color: #080808;
-    }
-
-
-    .navegadorYGeneros {
-        flex-direction: row;
-        align-items: center;
-        display: grid;
-        margin: 20px;
-    }
-
-    .barraNav, .gender {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .peliculasYSeries {
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-    }
-
-    .linea {
-        flex-direction: column;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    .botonBuscar {
-        margin: 20px auto;
-        padding: 10px 20px;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .linea {
-        justify-content: center;
-    }
-}*/

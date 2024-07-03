@@ -152,7 +152,7 @@ const PELICULAS_Y_SERIES =
         duración: "23 min",
         poster: "./images/Brooklyn99.jpg",
         categoria: 2,
-        video: "https://www.youtube.com/embed/HlBYdiXdUa8?si=8DVHBO1twslRpP6d"
+        video: "https://www.youtube.com/embed/v0QTdCHX_-c?si=R3S-e3baRVERR-jH"
     },
 
     {
@@ -185,7 +185,7 @@ const PELICULAS_Y_SERIES =
         duración: "42 min",
         poster: "./images/GossipGirls.jpg",
         categoria: 2,
-        video: "https://www.youtube.com/embed/OQ6fQJs_yt0?si=lTu2V0nCb3byHdPI"
+        video: "https://www.youtube.com/embed/6eCoR6vmNzQ?si=epGVuvDOUYBjKkqd"
     },
 
     {
