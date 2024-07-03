@@ -30,7 +30,6 @@ a {
 
 .menu {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color: #080808;
 }
@@ -45,7 +44,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
 }
 
 .navegador {
@@ -116,6 +114,41 @@ a {
 
 .fa-user, .fa-door-open, .fa-film, .fa-house {
     color: #d31818cc;
+}
+
+footer {
+    background-color: #080808;
+    color: #ecf0f1a9;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin-bottom: 8px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
 }
 
 
@@ -194,7 +227,8 @@ a {
     .linea {
         justify-content: center;
     }
-}body {
+}
+/*body {
     margin: 0;
     background-color: #111111f3;
     color: #ecf0f1a9;
@@ -322,9 +356,9 @@ footer {
     color: #ecf0f1a9;
     text-align: center;
     padding: 20px 0;
-    position: relative; /* Cambiado a relativo para que no sea fijo */
+    position: relative;
     width: 100%;
-    clear: both; /* Añadido para asegurar que no haya superposiciones */
+    clear: both;
 }
 
 .footer-content {
@@ -340,7 +374,7 @@ footer {
 .footer-content ul {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 10px; /* Añade un margen superior para separar del contenido */
+    margin-top: 10px;
 }
 
 .footer-content ul li {
@@ -433,4 +467,4 @@ footer {
     .linea {
         justify-content: center;
     }
-}
+}*/
