@@ -1,5 +1,4 @@
-const PELICULAS_Y_SERIES = 
-[
+const PELICULAS_Y_SERIES = [
     {
         título: "John Wick",
         genero: "Acción",
@@ -9,18 +8,29 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/C0BMx-qxsP4?si=bsgR64-_lG5H8OrZ"
     },
-
     {
         título: "Gambito De Dama",
         genero: "Novela",
         sinopsis: "En un orfanato de los años 50, una chica exhibe un talento extraordinario para el ajedrez. A medida que su fama sube como la espuma, intenta superar su adicción.",
-        temporadas: 1,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1: Apertura", video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"},
+                    {titulo: "Capítulo 2: Intercambio", video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"},
+                    {titulo: "Capítulo 3: Peones doblados", video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"},
+                    {titulo: "Capítulo 4: Medio juego", video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"},
+                    {titulo: "Capítulo 5: Ataque doble", video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"},
+                    {titulo: "Capítulo 6: Aplazamiento", video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"},
+                    {titulo: "Capítulo 7: Final", video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"}
+                ]
+            }
+        ],
         duración: "46 min / 67 min",
         poster: "./images/GambitoDeDamas.jpg",
         categoria: 2,
         video: "https://www.youtube.com/embed/oZn3qSgmLqI?si=EqAOiIVVc-ft2Qu5"
     },
-
     {
         título: "Frozen",
         genero: "Fantasia",
@@ -30,28 +40,101 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/SRRRrCNTVJA?si=c_-llSDBu0WNJ0oS"
     },
-
     {
         título: "El Maravilloso Mundo de Gumball",
         genero: "Caricaturas",
         sinopsis: "Las aventuras de Gumball, un gato azul, junto con su familia en la ciudad de elmore",
-        temporadas: 6,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 2,
+                capitulos: [
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            }, {
+                numero: 3,
+                capitulos: [
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 4,
+                capitulos: [
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"}
+                ]
+            },
+            {
+                numero: 5,
+                capitulos: [
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"}
+                ]
+            }, {
+                numero: 6,
+                capitulos: [
+                    {titulo: "Capítulo 24", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 25", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"}
+                ]
+            },
+
+        ],
         duración: "24 min",
         poster: "./images/EIMDG.jpg",
         categoria: 2,
         video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"
     },
-
     {
         título: "Rapido y furiosos",
         genero: "Acción",
-        sinopsis: "El agente encubierto Brian O'Conner se infiltra en el mundo de las carreras callejeras de Los Ángeles para investigar una serie de robos de camiones. Se gana la confianza de Dominic Toretto, el carismático líder de una pandilla de corredores y sospechoso principal de los robos. Mientras se sumerge más en este mundo lleno de velocidad y adrenalina, Brian se enamora de Mia, la hermana de Dom, y empieza a cuestionar su lealtad. La tensión crece cuando su doble vida lo coloca en un dilema entre cumplir con su deber como policía o salvar a sus nuevos amigos.",
+        sinopsis:  "El agente encubierto Brian O'Conner se infiltra en el mundo de las carreras callejeras de Los Ángeles para investigar una serie de robos de camiones.",
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1: A todo gas", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2. A todo gas 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3: Tokyo Race", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4: Aun mas rapido", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5: Fast&Furious 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6: Fast&Furious 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7: Fast&Furious 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8: Fast&Furious 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9: Fast&Furious:Hobbs &Shaw", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10:Fast&Furious 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+      
+
+        ],
         duración: "1h 46m",
         poster: "./images/RapidoYFuriosos.jpg",
         categoria: 1,
         video: "https://www.youtube.com/embed/2TAOizOnNPo?si=N9LF6HGsm-ap2hRO"
     },
-
+    
     {
         título: "Esperando la carroza",
         genero: "Comedia",
@@ -61,7 +144,6 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/KIgOuEPQZsU?si=Rg5Zao5PX_uv-VND"
     },
-
     {
         título: "Querida, encogí a los niños",
         genero: "Familiar",
@@ -71,7 +153,6 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/cN19AazIWLk?si=W7HeqTKvIXB12bhA"
     },
-
     {
         título: "El Secreto De Sus Ojos",
         genero: "Suspenso",
@@ -81,7 +162,6 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/hKa8U-8vsfU?si=NphNMGpLInoT9FdU"
     },
-
     {
         título: "Crepusculo",
         genero: "Romance",
@@ -91,7 +171,6 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/kX2DKZcDM-o?si=xcXti2L_Y7iswl0a"
     },
-
     {
         título: "El diablo viste a la moda",
         genero: "Comedia",
@@ -101,7 +180,6 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/6ZOZwUQKu3E?si=jsrNN_3lTUGcKWg4"
     },
-
     {
         título: "Scream",
         genero: "Terror",
@@ -111,18 +189,283 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/i3J6ACKQ7K0?si=0gTzIXQ4qUMZ6KPj"
     },
-
     {
         título: "Los Simpsons",
         genero: "Comedia",
         sinopsis: "El día a día de la familia Simpsons en Springfield, una ciudad de los Estados Unidos",
-        temporadas: 35,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/aDcFhYtiIEM?si=gF9PYibgIdn8Utuc"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/aDcFhYtiIEM?si=gF9PYibgIdn8Utuc"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/aDcFhYtiIEM?si=gF9PYibgIdn8Utuc"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/aDcFhYtiIEM?si=gF9PYibgIdn8Utuc"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 2,
+                capitulos: [
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            }, {
+                numero: 3,
+                capitulos: [
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 4,
+                capitulos: [
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 5,
+                capitulos: [
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            }, {
+                numero: 6,
+                capitulos: [
+                    {titulo: "Capítulo 24", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 25", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero:7,
+                capitulos: [
+                    {titulo: "Capítulo 26", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 27", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 8,
+                capitulos: [
+                    {titulo: "Capítulo 28", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 29", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 9,
+                capitulos: [
+                    {titulo: "Capítulo 30", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 31", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 10,
+                capitulos: [
+                    {titulo: "Capítulo 32", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 33", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 11,
+                capitulos: [
+                    {titulo: "Capítulo 34", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 35", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 12,
+                capitulos: [
+                    {titulo: "Capítulo 36", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 37", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 13,
+                capitulos: [
+                    {titulo: "Capítulo 38", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 39", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 14,
+                capitulos: [
+                    {titulo: "Capítulo 40", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 41", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 15,
+                capitulos: [
+                    {titulo: "Capítulo 42", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 43", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 16,
+                capitulos: [
+                    {titulo: "Capítulo 44", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 45", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 17,
+                capitulos: [
+                    {titulo: "Capítulo 46", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 47", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 18,
+                capitulos: [
+                    {titulo: "Capítulo 48", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 49", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 19,
+                capitulos: [
+                    {titulo: "Capítulo 50", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 51", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 20,
+                capitulos: [
+                    {titulo: "Capítulo 52", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 53", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 21,
+                capitulos: [
+                    {titulo: "Capítulo 54", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 55", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 22,
+                capitulos: [
+                    {titulo: "Capítulo 56", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 57", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 23,
+                capitulos: [
+                    {titulo: "Capítulo 58", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 59", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 24,
+                capitulos: [
+                    {titulo: "Capítulo 60", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 61", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 25,
+                capitulos: [
+                    {titulo: "Capítulo 62", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 63", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 26,
+                capitulos: [
+                    {titulo: "Capítulo 64", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 65", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 27,
+                capitulos: [
+                    {titulo: "Capítulo 66", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 67", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 28,
+                capitulos: [
+                    {titulo: "Capítulo 68", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 69", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 29,
+                capitulos: [
+                    {titulo: "Capítulo 70", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 71", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 30,
+                capitulos: [
+                    {titulo: "Capítulo 72", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 73", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 31,
+                capitulos: [
+                    {titulo: "Capítulo 74", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 75", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 32,
+                capitulos: [
+                    {titulo: "Capítulo 76", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 77", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 33,
+                capitulos: [
+                    {titulo: "Capítulo 78", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 79", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 34,
+                capitulos: [
+                    {titulo: "Capítulo 80", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 81", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 35,
+                capitulos: [
+                    {titulo: "Capítulo 82", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 83", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 36,
+                capitulos: [
+                    {titulo: "Capítulo 84", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 85", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            
+        ],
+      
         duración: "24 min",
         poster: "./images/TheSimpsons.jfif",
         categoria: 2,
         video: "https://www.youtube.com/embed/aDcFhYtiIEM?si=gF9PYibgIdn8Utuc"
     },
-
     {
         título: "Fragmentado",
         genero: "Suspenso",
@@ -132,62 +475,720 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/KIpGKumxiGg?si=QNOKjRP3RcS5Blxa"
     },
-
     {
         título: "Fallout",
         genero: "Acción",
         sinopsis: "En un futuro posapocalíptico provocado por la devastación nuclear, los ciudadanos de Los Ángeles deben vivir en búnkeres subterráneos para protegerse de la radiación, los mutantes y los bandidos.",
-        temporadas: 1,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1: El fin", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2: El objetivo", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3:La cabeza", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4: Los necrofagos", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5: El pasado", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6: La trampa", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7: La radio", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8: El comienzo", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            
+
+        ],
         duración: "1h",
         poster: "./images/Fallout.jpg",
         categoria: 2,
         video: "https://www.youtube.com/embed/GExflKHU3VE?si=ubt77dSeov-D2rl4"
     },
-
     {
         título: "Brooklyn99",
         genero: "Comedia",
         sinopsis: "Los detectives Jake Peralta, Amy Santiago, Rosa Diaz, Charles Boyle y el sargento Terry Jeffords forman una simpática y poco convencional brigada, pero todo cambia tras la llegada del nuevo jefe, el inflexible Raymond Holt.",
-        temporadas: 8,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 2,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }, {
+                numero: 3,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 4,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 5,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }, {
+                numero: 6,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+            {
+                numero: 7,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+            {
+                numero: 8,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+
+        ],
         duración: "23 min",
         poster: "./images/Brooklyn99.jpg",
         categoria: 2,
         video: "https://www.youtube.com/embed/v0QTdCHX_-c?si=R3S-e3baRVERR-jH"
     },
-
     {
         título: "Hora de Aventura",
         genero: "Caricaturas",
         sinopsis: "narra las extravagantes, coloridas y a menudo absurdas y divertidas aventuras de un niño llamado Finn y su amigo canino parlante, Jake , que se unen para divertirse en la mística Tierra de Ooo.",
-        temporadas: 10,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 2,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }, {
+                numero: 3,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 4,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 5,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }, {
+                numero: 6,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+            {
+                numero: 7,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+            {
+                numero: 8,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+            {
+                numero: 9,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+            {
+                numero: 10,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            },
+
+        ],
         duración: "15 min",
         poster: "./images/AdventureTime.jpg",
         categoria: 2,
         video: "https://www.youtube.com/embed/kMDaAcfCYow?si=Bj99dPEC_sHQG5bC"
     },
-
     {
         título: "Fullmetal Alchemist",
         genero: "Anime",
         sinopsis: "dos hermanos que intentaron resucitar a su madre muerta usando una ciencia muy antigua y secreta de la alquimia. Pero el ritual sale mal y el cuerpo de uno de ello se desmaterializa y su mente queda atrapada para siempre en una armadura de metal.",
-        temporadas: 1,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 24", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 25", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 26", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 27", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 28", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 29", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 30", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 31", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 32", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 33", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 34", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 35", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 36", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 37", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 38", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }],
         duración: "24 min",
         poster: "./images/FullMetalAlchemist.jpg",
         categoria: 2,
         video: "https://www.youtube.com/embed/QJHaXGhBBbc?si=PiEN7ta74sSJnyFA"
     },
-
     {
         título: "Gossip Girl",
         genero: "Novela",
         sinopsis: " se basa en Gossip Girl, el cual es un blog en Internet muy conocido, en donde se narra día a día chismes, conflictos amorosos, familiares y económicos de un grupo de jóvenes multimillonarios de la elite de Manhattan.",
-        temporadas: 6,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 2,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }, {
+                numero: 3,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 4,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 5,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }, {
+                numero: 6,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    
+                ]
+                
+            }],
         duración: "42 min",
         poster: "./images/GossipGirls.jpg",
         categoria: 2,
         video: "https://www.youtube.com/embed/6eCoR6vmNzQ?si=epGVuvDOUYBjKkqd"
     },
-
     {
         título: "The Love Witch",
         genero: "Suspenso",
@@ -197,19 +1198,129 @@ const PELICULAS_Y_SERIES =
         categoria: 1,
         video: "https://www.youtube.com/embed/BHhaIRevB-Y?si=ZH4vHRXuqKGnh-h2"
     },
-
     {
         título: "Phineas y Ferb",
         genero: "Familiar",
         sinopsis: "Phineas y Ferb son dos hermanastros que quieren disfrutar al máximo de las vacaciones de verano. No dejan de hacer trastadas y de inventar instrumentos imposibles como un monopatín gigante para sufrimiento de su hermana mayor Candace, que no les aguanta.",
-        temporadas: 4,
+        temporadas: [
+            {
+                numero: 1,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                ]
+            },
+            {
+                numero: 2,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }, {
+                numero: 3,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 23", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            },
+            {
+                numero: 4,
+                capitulos: [
+                    {titulo: "Capítulo 1", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 2", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 3", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 4", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 5", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 6", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 7", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 8", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 9", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 10", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 11", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 12", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 13", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 14", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 15", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 16", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 17", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 18", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 19", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 20", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 21", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+                    {titulo: "Capítulo 22", video: "https://www.youtube.com/embed/LOBOJQocArs?si=XPtnPMyx8B3Qsbnm"},
+
+                ]
+            }],
         duración: "22 min",
         poster: "./images/FineasYFerb.jfif",
         categoria: 2,
         video: "https://www.youtube.com/embed/Nt5AuDn6BwE?si=e0pRsM5KlUk1fMh1"
     }
-]
-
+];
 
 function actualizarCatalogo(catalogo){
     const nodo_pelicualasYseries = document.querySelector('.peliculasYSeries')
@@ -251,4 +1362,26 @@ function filtrarSeries(){
     series = PELICULAS_Y_SERIES.filter(item => item.categoria === 2)
     return series
 }
-
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.carousel');
+    const flkty = new Flickity(carousel, {
+      // Configuración de Flickity
+    });
+  
+    // Manejar clic en las imágenes del carrusel
+    carousel.addEventListener('click', function(event) {
+      const target = event.target;
+      // Buscar el ancestro que tenga el atributo data-id
+      const cell = target.closest('.carousel-cell[data-id]');
+      if (cell) {
+        const id = parseInt(cell.getAttribute('data-id'), 10);
+        // Validar que el id esté dentro del rango de PELICULAS_Y_SERIES
+        if (id >= 0 && id < PELICULAS_Y_SERIES.length) {
+          // Redirigir a la página de detalle con el id correspondiente
+          window.location.href = `./detalleSerieOPelicula.html?id=${id}`;
+        } else {
+          console.error(`Índice ${id} está fuera de rango.`);
+        }
+      }
+    });
+  });
