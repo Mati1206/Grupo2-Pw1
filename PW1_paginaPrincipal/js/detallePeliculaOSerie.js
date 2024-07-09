@@ -1,21 +1,3 @@
-// const carrousel= document.querySelector('.main-carrousel');
-
-// const flkty= new Flickity (carrousel,{
-//     cellAling: "left",
-// })
-
-// var elem = document.querySelector('.main-carousel');
-// var flkty = new Flickity( elem, {
-//   // options
-//   cellAlign: 'left',
-//   contain: true
-// });
-
-// // element argument can be a selector string
-// //   for an individual element
-// var flkty = new Flickity( '.main-carousel', {
-//   // options
-// });
 
 
 const carousel = document.querySelector(".main-carousel");
@@ -93,7 +75,7 @@ function mostrarInformacionPeliculaSerie() {
             temporadasSelect.addEventListener('change', (event) => {
                 actualizarDropdownCapitulos(event.target.value);
             });
-            actualizarDropdownCapitulos(0); // Initial load of first season
+            actualizarDropdownCapitulos(0); 
         }
     }
 }

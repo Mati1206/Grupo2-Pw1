@@ -1365,19 +1365,19 @@ function filtrarSeries(){
 document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
     const flkty = new Flickity(carousel, {
-      // Configuración de Flickity
+     
     });
   
-    // Manejar clic en las imágenes del carrusel
+  
     carousel.addEventListener('click', function(event) {
       const target = event.target;
-      // Buscar el ancestro que tenga el atributo data-id
+
       const cell = target.closest('.carousel-cell[data-id]');
       if (cell) {
         const id = parseInt(cell.getAttribute('data-id'), 10);
-        // Validar que el id esté dentro del rango de PELICULAS_Y_SERIES
+      
         if (id >= 0 && id < PELICULAS_Y_SERIES.length) {
-          // Redirigir a la página de detalle con el id correspondiente
+        
           window.location.href = `./detalleSerieOPelicula.html?id=${id}`;
         } else {
           console.error(`Índice ${id} está fuera de rango.`);
